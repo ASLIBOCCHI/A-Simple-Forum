@@ -1,0 +1,1616 @@
+Post by: rizzky
+Content: Menurut kalian, apakah SCM masih relevan di era Agile dan DevOps yang serba cepat?
+Replies:
+- Kelompok-5: SCM tetap sangat relevan karena menjadi fondasi otomatisasi dalam CI/CD dan DevOps yang memungkinkan tim bekerja cepat dengan risiko minimal, memastikan setiap perubahan kode tetap terlacak, aman, dan dapat dipulihkan kapan saja
+- Kelompok-12: justru SCM itu makin relevan banget, bahkan udah jadi "nyawa" utamanya Agile sama DevOps. Tanpa SCM, cara kerja yang serba cepet itu malah nggak bakal bisa jalan sama sekali dan jatuhnya bakal jadi bencana.  Bayangin gini, Agile dan DevOps itu ibarat kita bawa mobil balap yang ngebut banget karena tim dituntut buat terus-terusan bikin fitur baru dan rilis update dengan cepet. Nah, SCM ini ibarat kemudi dan remnya. Kalau kita ngebut ngerjain kodingan bareng-bareng tapi nggak ada sistem yang ngatur historinya, nyimpen baseline, atau ngecegah kode biar nggak saling tabrakan, project-nya udah pasti langsung hancur berantakan di tengah jalan.  Terus, di dunia DevOps itu kan semuanya serba otomatis. Misalnya, pas kodingan beres, sistem bakal otomatis nge-tes dan nge-rilis aplikasinya. Nah, sistem otomatis ini dapet file kodingan yang bener dan aman dari mana? Ya ngambilnya dari SCM. Jadi, SCM justru jadi fondasi paling wajib biar tim bisa kerja super ngebut tapi project-nya tetep rapi, stabil, dan aman dari error.
+- Kelompok11: SCM justru menjadi tulang punggung otomatisasi modern, karena tanpa version management yang teratur, alur kerja CI/CD tidak akan memiliki database yang konsisten untuk menjalankan pengujian dan penyebaran aplikasi secara otomatis dan cepat.
+- Kelompok15: Masih, karena SCM bisa dibilang fondasi buat Agile. Kaya  CI/CD kalo ga ada SCM yang proper nati CI/CDnya bakal banyak masalah. Selain itu SCM bisa digunakan untuk baselining agar pengembangan yang cepat itu ga berbenturan. Kesimpulannya tetep masih kepake tapi dengan sedikit perubahan dan juga adaptasi
+- Kelompok-7: SCM tetap sangat relevan, hanya saja bentuknya telah nerubah dari proses yang kaku menjadi lebih otomatis dengan tools yang mendukung seperti GitHub dan pipeline seperti Jenkins, sehingga meskipun pengembangan berjalan cepat, setiap perubahan tetap dapat dilacak, dikontrol, dan dikembalikan jika terjadi kesalahan.
+- Kelompok-6: SCM tidak tergantikan. Justru di era yang serba cepat, SCM adalah yang membuat kecepatan tetap terarah, aman, dan bisa dipercaya.
+- Kelompok-14: SCM justru menjadi semakin krusial dalam era Agile dan DevOps karena bertindak sebagai fondasi utama yang memungkinkan otomatisasi dan kolaborasi paralel dalam ritme kerja yang cepat. Tanpa SCM, siklus CI/CD tidak akan bisa berjalan karena sistem tidak memiliki pemicu otomatis untuk melakukan pengujian maupun penyebaran kode setiap kali ada perubahan. Selain itu, fitur branching dalam SCM memungkinkan tim Agile untuk mengembangkan berbagai fitur secara bersamaan tanpa saling mengganggu, sekaligus memberikan jaring pengaman berupa kemampuan rollback instan jika iterasi cepat tersebut menyebabkan kegagalan sistem.
+- Kelompok 15:  Masih relevan. SCM merupakan fondasi yang memastikan kecepatan dalam Agile dan DevOps tanpa merusak kualitas sistem.  1. SCM memastikan integritas dan keterlacak software sepanjang siklus hidup pengembangan.  2. SCM memfasilitasi koordinasi antar developer yang bekerja pada basis kode yang sama agar tetap terorganisir dan konsisten.
+- Kelompok-1: Agile and DevOps encourage fast and frequent changes, but that also means teams need stronger control over code, versions, etc. SCM helps make sure every change is tracked and reviewed. Also, can be rolled back if something goes wrong. Without SCM, rapid development could become risky and messy because teams might lose track of what changed, who changed it, or which version is running in production.
+- Kelompok-13: Masih sangat relevan, bahkan bisa jadi fondasi. Tanpa SCM yang rapi, kita nggak bakal bisa punya CI/CD (yang otomasi rilis). Agile itu geraknya cepat, dan SCM itu yang mastiin kecepatan itu tetap aman dan terkontrol.
+- Kelompok-8: Sangat relevan dan lebih penting. Agile dan DevOps butuh perubahan cepat dan frequent release, sehingga SCM membantu menjaga kontrol versi, automasi, kolaborasi, dan stabilitas di tengah perubahan yang cepat.
+- Kelompok-4: SCM sangat relevan dan justru menjadi pondasi utama di era Agile dan DevOps. Praktik SCM modern sangat mendukung pergerakan rilis yang serba cepat melalui Integrasi CI/CD, Proses SCM harus terintegrasi secara mulus dengan pipeline CI/CD agar pengembangan tidak menjadi lambat dan terhindar dari celah. Otomatisasi, Tugas-tugas yang berulang dapat bekerja secara otomatis untuk membebaskan developer dan mengurangi human error.  Menjaga Kualitas, Kecepatan kerja selalu diimbangi dengan penerapan peer code review serta pengujian (testing) otomatis di setiap tahap agar bug dapat ditemukan lebih awal.
+- Kelompok-10: Masih relevan. Kenapa? Di era Agile dan DevOps, siklus update software itu serba cepat dan kodenya diubah terus-menerus sama banyak developer. Nah, DevOps itu kan sangat bergantung sama otomatisasi kayak CI/CD (Continuous Integration/Continuous Deployment).  Pipeline otomatis ini butuh satu sumber utama yang nyimpen versi kode paling stabil. Tanpa SCM kayak Git, mustahil kita bisa ngelakuin testing atau deploy otomatis karena sistem nggak tahu history kodenya dan versi mana yang mau ditarik. Bayangin aja kalau tim dipaksa rilis cepat tapi nggak ada yang ngelacak siapa yang ngubah file atau nggak ada opsi buat rollback pas tiba-tiba kodenya bikin server down. Rilisnya emang cepat, tapi hancurnya juga cepat.
+
+----------------------
+
+Post by: weneville
+Content: Berikan contoh kasus yang mencerminkan pentingnya SCM
+Replies:
+- Kelompok-12: Bayangin deh lagi kerkel H-1 sebelum deadline, aplikasinya sebenernya udah jalan lancar. Tapi malemnya, pas lagi lembur sambil minum espresso, Jovan iseng nambahin fitur baru di kodingan utama tanpa bilang-bilang. Besok paginya pas project-nya mau di-run, tiba-tiba malah error total.  Karena kalian nggak pakai SCM, nggak ada yang tau pasti baris kode mana aja yang diotak-atik sama Jovan semalem. Akhirnya, kalian terpaksa panik dan ngebongkar kodingannya satu-satu secara manual buat nyari bug-nya. Parahnya lagi, kalian nggak punya file backup versi kodingan kemarin yang masih bener, jadi pilihannya cuma ngabisin waktu berjam-jam buat benerin atau ngulang dari awal.  Nah, coba bandingin kalau kalian pakai SCM. SCM bakal nyatet dengan jelas histori perubahan yang dilakuin Jovan, lengkap jam berapa dan di baris mana aja. Jadi pas sadar aplikasinya rusak, kamu tinggal pencet undo atau revert buat balikin project-nya ke versi kemarin yang masih aman.
+- Kelompok11: SCM berfungsi sebagai pelindung integrity kode yang mencegah data tertimpa secara tidak sengaja dan menyediakan opsi rollback untuk memulihkan sistem dengan cepat jika terjadi error saat kolaborasi tim.
+- Kelompok-14: Misalnya ketika dua developer mengerjakan fitur berbeda pada file yang sama, misalnya fitur "Promo" dan fitur "Pembayaran". Tanpa SCM, developer yang terakhir menyimpan file akan menghapus logika fitur yang dikerjakan oleh developer pertama tanpa ada peringatan sistem. Akibatnya, saat aplikasi launch, salah satu fitur akan hilang sepenuhnya atau menyebabkan sistem crash, memaksa tim untuk menulis ulang kode secara manual dan membuang waktu hanya untuk mencari tau bagian mana yang hilang atau rusak.
+- Kelompok-1: A company releases a mobile app update, but users start reporting crashes. Because the team uses SCM, they can quickly check which code changes, library versions, and configuration files were included in that release. They identify the faulty change, roll back to the previous stable version, and eventually release a fix. SCM allowed helped the team track changes, find the problem faster and recover faster.
+- Kelompok-6: Bayangkan sebuah tim sedang mengembangkan aplikasi e-wallet dengan deadline yang ketat, di mana setiap developer bekerja cepat menambahkan fitur dan memperbaiki bug, tetapi tanpa menggunakan Software Configuration Management (SCM). Mereka saling bertukar file secara manual tanpa pencatatan yang jelas, sehingga ketika aplikasi dirilis dan tiba-tiba muncul bug serius seperti login error dan fitur yang tidak berjalan, tidak ada satu pun yang tahu perubahan mana yang menjadi penyebabnya. Situasi ini berubah menjadi kekacauan karena tim harus menelusuri kode satu per satu tanpa arah yang pasti. Namun, jika SCM digunakan, setiap perubahan akan tercatat rapi melalui version control, lengkap dengan siapa yang mengubah, kapan, dan untuk tujuan apa, sehingga ketika bug muncul, tim dapat dengan cepat melacak sumber masalah atau bahkan melakukan rollback ke versi sebelumnya yang stabil. Dengan begitu, waktu penanganan yang semula bisa memakan berjam-jam atau bahkan hari dapat dipangkas menjadi jauh lebih singkat, sekaligus menjaga stabilitas dan kepercayaan pengguna terhadap aplikasi.
+- Kelompok-5: Misalnya, beberapa developer mengerjakan fitur checkout secara bersamaan. Tanpa Version Control seperti Git, perubahan kode bisa bentrok atau tertimpa. Kalau muncul bug, tanpa Issue Tracking seperti Jira, tim akan sulit melacak sumber masalah. Tanpa Build Tool seperti Apache Maven, aplikasi juga bisa jalan di komputer developer tapi error saat di server.
+- Kelompok-7: Bayangkan sebuah tim developer sedang mengerjakan aplikasi dan semuanya berjalan lancar menjelang deadline, lalu salah satu anggota tim melakukan perubahan pada kode utama tanpa memberi tahu yang lain, dan keesokan harinya aplikasi tiba-tiba error sehingga tidak bisa dijalankan; karena tim tidak menggunakan SCM, mereka tidak memiliki riwayat perubahan sehingga tidak tahu bagian mana yang menyebabkan masalah, tidak bisa melacak siapa yang mengubah kode tersebut, dan tidak memiliki cadangan versi sebelumnya yang masih stabil, akibatnya mereka harus memeriksa kode satu per satu secara manual yang memakan waktu lama bahkan berisiko mengulang pekerjaan dari awal, sedangkan jika menggunakan SCM seperti Git melalui platform seperti GitHub, setiap perubahan akan tercatat dengan jelas sehingga tim dapat dengan cepat menemukan sumber error dan mengembalikan kode ke versi sebelumnya (rollback) tanpa mengganggu progres proyek secara keseluruhan.
+- Kelompok15: Sebuah tim pengembang sedang mengerjakan pembaruan aplikasi e-commerce. Developer A memperbaiki bug di sistem pembayaran, sementara Developer B menambahkan fitur diskon baru. Keduanya mengubah file yang sama secara bersamaan tanpa SCM yang ketat.  Tanpa SCM, developer B dapat menimpa perubahan yang dibuat oleh developer A saat mengunggah code ke server.
+- Kelompok-13: Misalnya tim lagi ngerjain fitur baru selama seminggu, eh ternyata pas mau dirilis kodenya malah bikin sistem crash total. Berkat SCM, kita tinggal pencet tombol "Rollback" buat balikin aplikasi ke kondisi stabil kemarin dalam hitungan detik, tanpa harus pusing benerin manual satu satu.
+- Kelompok-8: Contohnya dua developer mengedit file yang sama tanpa version control, lalu salah satu perubahan tertimpa. Dengan SCM seperti Git, perubahan bisa di-merge, konflik bisa diselesaikan, dan history perubahan tetap tercatat.
+- Kelompok-4: Developer A baru saja menyelesaikan perbaikan untuk sebuah celah security yang kritis pada sistem. Di hari yang sama, Developer B sedang mengerjakan penambahan fitur profil pengguna dan bekerja secara bersamaan pada basis kode yang sama. Karena tidak ada kontrol versi dan manajemen perubahan, Developer B langsung menyimpan kodenya, yang tanpa sengaja menimpa dan menghapus perbaikan security dari Developer A. Ini adalah contoh nyata di mana tanpa kontrol perubahan yang baik, satu perubahan kecil bisa merusak fitur lain yang sudah berjalan.   Saat aplikasi dirilis dan celah tersebut akhirnya dimanfaatkan oleh pihak luar, tim kebingungan saat melakukan investigasi karena mereka tidak memiliki jejak audit (audit trail) atas perubahan yang terjadi.
+- Kelompok-10: Di tim itu, si A dan si B kebetulan ditugasin ngedit file yang sama, misalnya file payment.php. Si A udah selesai benerin bug di fitur transfer bank, terus dia save dan upload file-nya. Tapi di waktu yang sama, si B ternyata juga lagi ngoding fitur e-wallet di file yang sama dan langsung numpuk file yang baru aja di-upload si A. Hasilnya? Kodingan perbaikan bug milik si A hilang total tertimpa kerjaan si B. Kalau mereka nggak pakai SCM, mereka pasti bakal pusing nyari tahu kapan dan kenapa kodenya hilang, ujung-ujungnya terpaksa ngoding ulang dari awal.
+
+----------------------
+
+Post by: weneville
+Content: Kapan waktu paling tepat untuk membuat baseline dalam project?
+Replies:
+- Kelompok-5: Baseline dibuat setiap kali sebuah fase pengembangan atau fitur penting telah selesai diuji, disetujui secara resmi, dan dinyatakan stabil agar bisa digunakan sebagai titik acuan yang aman sebelum masuk ke step berikutnya
+- Kelompok-14: Waktu yang tepat untuk membuat baseline dalam project adalah saat suatu bagian pekerjaan sudah stabil dan disepakati sebagai acuan. Baseline dibuat ketika kondisi project sudah cukup matang sehingga bisa dijadikan patokan tetap untuk perkembangan selanjutnya
+- Kelompok-1: Waktu yang tepat untuk membuat baseline adalah ketika software sudah melalui proses review, dan sudah disetejui oleh Tim untuk menjadikan versi tersebut sebagai acuan referensi (baseline).
+- Kelompok-12: Waktu paling tepat buat bikin baseline itu pas project kamu udah nyentuh titik pencapaian penting alias milestone, atau pas satu tahap kerjaan udah bener-bener beres dan disetujui bareng-bareng. Misalnya, pas semua fitur utama udah selesai dikoding, udah dites jalan lancar, dan dipastiin nggak ada error yang parah. Nah, di momen yang lagi aman dan stabil inilah kodingannya "dikunci" dan dijadiin baseline.  Selain itu, baseline juga wajib banget dibikin tepat sebelum aplikasinya dirilis ke pengguna atau sebelum masuk ke fase development yang baru. Tujuannya biar kalau nanti pas lagi nambahin fitur baru kodingannya malah hancur, atau aplikasinya tiba-tiba bermasalah pas dipakai, kita punya patokan versi stabil yang jelas buat ngebenerinnya. Intinya, baseline dibikin tiap kali tim sepakat kalau versi kodingan saat itu udah mantap, jadi disimpan sebagai patokan resmi sebelum lanjut ngotak-ngatik hal lain yang berisiko.
+- Kelompok-7: Waktu paling tepat untuk membuat baseline dalam sebuah project adalah pada momen ketika suatu bagian pekerjaan sudah mencapai kondisi stabil, disetujui, dan siap dijadikan acuan, misalnya setelah kebutuhan sistem (requirement) selesai dan divalidasi, setelah desain disepakati, atau setelah sebuah fitur atau versi aplikasi telah lolos testing dan siap dirilis; baseline tidak dibuat sembarangan di tengah perubahan yang masih sering terjadi, karena tujuannya adalah menjadi titik referensi yang jelas untuk membandingkan perubahan di masa depan, sehingga dalam praktik modern yang mengadopsi Agile dan DevOps, baseline biasanya dibuat lebih sering tetapi dalam lingkup kecil, seperti saat setiap sprint selesai atau ketika akan melakukan rilis versi tertentu, agar tim tetap bisa bergerak cepat tanpa kehilangan kontrol terhadap versi yang sudah dianggap stabil.
+- Kelompok15: Waktu paling tepat untuk membuat baseline adalah pada milestone penting dari suatu proyek, yaitu setelah selesainya dokumen, desain, modul, atau versi software, terus direview, disetujui, dan cukup stabil untuk dijadikan acuan resmi bagi tahap berikutnya.
+- Kelompok-6: Baseline dibuat saat proyek sudah stabil dan siap dijadikan acuan, biasanya setelah tahap penting selesai dan lolos testing atau sebelum rilis. Intinya, saat versi tersebut cukup matang untuk dijadikan patokan.
+- Kelompok-13: Pas kita udah nyampe milestone penting. Contohnya pas akhir sebuah sprint, setelah selesai testing yang clean, atau tepat sebelum aplikasi mau di deploy buat produksi.
+- Kelompok-4: Waktu paling tepat untuk membuat baseline adalah setelah sebuah versi software atau dokumen selesai di-review dan resmi disetujui. Pada titik inilah hasil kerja dikunci menjadi acuan utama bagi tim, sehingga tidak bisa lagi diubah sembarangan tanpa melewati prosedur change control yang jelas.
+- Kelompok-8: Biasanya dibuat saat milestone penting, misalnya setelah requirement disetujui, desain selesai, atau sebelum release/testing besar. Intinya saat ada versi yang cukup stabil untuk dijadikan acuan.
+- Kelompok-10: Waktu paling tepat buat bikin baseline itu pas kita udah nyelesaiin sebuah milestone penting dalam project dan hasil kerjanya udah di-review serta disetujui bareng-bareng sama tim. Contohnya, pas fase pengumpulan requirements udah final, atau pas desain arsitektur udah fix sebelum kita mulai ngetik kode
+- Kelompok11: Baseline dalam project paling tepat dibuat pada setiap tahap penting ketika suatu deliverable sudah cukup stabil dan telah disetujui oleh stakeholder, seperti setelah requirement selesai, desain sistem ditetapkan, hasil development sudah stabil, dan sebelum proses release. Tujuannya adalah agar setiap perubahan setelah titik tersebut bisa dikontrol dengan jelas, sehingga memudahkan tracking, pengelolaan versi, serta menghindari perubahan yang tidak terstruktur selama proses pengembangan.
+
+----------------------
+
+Post by: weneville
+Content: Apa yang terjadi ketika tim development tidak menggunakan SCM sama sekali?
+Replies:
+- Kelompok-12: Kalau tim development nggak pakai SCM sama sekali, hal pertama yang bakal kejadian adalah chaos waktu gabungin kodingan. Bayangin aja, kalau kita lagi ngerjain satu file yang sama bareng temen, terus pas mau disatuin malah kodingan kita ketimpa sama kodingan mereka. Akhirnya, ada baris kode yang hilang atau malah harus ngetik ulang dari awal karena nggak ada sistem otomatis yang ngatur bentrok atau conflict antar kode.  Terus, masalah fatal lainnya adalah kita nggak punya fitur undo kalau tiba-tiba project-nya error. Pas lagi asik ngoding terus tiba-tiba aplikasinya crash parah, kita bakal susah banget buat ngelacak siapa yang terakhir ngubah dan bagian mana yang bikin rusak. Mau nggak mau harus ngecek kode secara manual satu-satu, dan kita nggak bisa dengan gampang balik ke versi kodingan kemarin yang masih jalan normal.  Terakhir, proses kolaborasi bakal jadi super manual dan rawan banget kehilangan data. Tim yang nggak pakai SCM biasanya bakal oper-operan file source code lewat flashdisk, WhatsApp, atau Google Drive pakai nama file kayak "Project_Final", "Project_Final_Beneran", sampai "Project_Revisi_Fix_Banget". Selain bikin pusing nentuin mana versi yang paling update, kalau sewaktu-waktu laptop salah satu anggota tim rusak, kodingan yang ada di dalemnya bisa ikut lenyap tanpa sisa.
+- Kelompok-14: Tanpa SCM, tim pengembangan akan terjebak dalam kekacauan kolaborasi karena tidak adanya sistem yang mengatur sinkronisasi kode antar pengembang. Risiko terbesar adalah terjadinya overwriting, di mana pekerjaan satu anggota tim tertimpa oleh anggota lain secara tidak sengaja saat menyimpan file di folder bersama. Selain itu, tim kehilangan kemampuan untuk melakukan rollback ke versi sebelumnya jika terjadi error fatal, serta tidak memiliki rekam jejak tentang siapa yang mengubah baris kode tertentu dan apa alasannya.
+- Kelompok-5: Kalau tim development sama sekali tidak memakai Software Configuration Management (SCM), proses pembuatan software bisa jadi berantakan dan rawan error. Tanpa Version Control seperti Git, developer biasanya harus tukar file secara manual, yang berisiko bikin kode tertimpa atau hilang. Kalau ada kesalahan besar, tim juga sulit melakukan rollback ke versi yang sebelumnya stabil karena tidak ada riwayat perubahan yang jelas. Selain itu, tanpa SCM, proses tracking juga jadi susah. Saat muncul bug, tim akan kesulitan mencari bagian kode yang bermasalah, siapa yang mengubahnya, dan kenapa perubahan itu dibuat. Ditambah lagi, tanpa Build Tool seperti Apache Maven, sering muncul masalah "works on my machine", jalan di komputer developer, tapi error saat dijalankan di server karena dependency dan konfigurasi tidak seragam.
+- Kelompok-5: Kalau tim development sama sekali tidak memakai Software Configuration Management (SCM), proses pembuatan software bisa jadi berantakan dan rawan error. Tanpa Version Control seperti Git, developer biasanya harus tukar file secara manual, yang berisiko bikin kode tertimpa atau hilang. Kalau ada kesalahan besar, tim juga sulit melakukan rollback ke versi yang sebelumnya stabil karena tidak ada riwayat perubahan yang jelas. Selain itu, tanpa SCM, proses tracking juga jadi susah. Saat muncul bug, tim akan kesulitan mencari bagian kode yang bermasalah, siapa yang mengubahnya, dan kenapa perubahan itu dibuat. Ditambah lagi, tanpa Build Tool seperti Apache Maven, sering muncul masalah "works on my machine", jalan di komputer developer, tapi error saat dijalankan di server karena dependency dan konfigurasi tidak seragam.
+- Kelompok15: Jika suatu tim development tidak menggunakan SCM, proyek bisa mengalami kekacauan versi, konflik antar developer, sulit melacak perubahan, tidak bisa rollback dengan mudah, testing tidak akan konsisten, dan risk kegagalan release meningkat.
+- Kelompok-7: Tanpa SCM, tim development akan kesulitan mengontrol perubahan karena tidak ada pencatatan versi, sehingga tidak tahu siapa mengubah apa dan kapan, yang berujung pada konflik kode, bug sulit dilacak, dan tidak bisa rollback saat terjadi error; tanpa tools seperti Git atau GitHub, kolaborasi jadi tidak efisien, perubahan bisa saling menimpa, dan tim berisiko harus memperbaiki manual atau bahkan mengulang pekerjaan dari awal.
+- Kelompok-6: Kalau tim developer tidak memakai SCM sama sekali, proyek mereka mudah jadi kacau karena tidak ada kontrol versi, tidak ada catatan perubahan, dan tidak ada koordinasi yang jelas. File bisa saling tertimpa, bug sulit dilacak, dan tim tidak tahu siapa mengubah apa. Saat terjadi error atau rilis, semuanya jadi lambat dan berisiko tinggi karena tidak ada acuan versi yang stabil. Akhirnya, pengembangan jadi tidak efisien dan rawan kesalahan.
+- Kelompok-1: Jika Tim menjaankan project tanpa menjalankan SCM, project akan beresiko mengalami perupahan yang tak terkendali. Perubahan tak terkendali ini nantinya akan menyebabkan ketidak konsistenan dalam sistem dan akhirnya akan mengalami system downtime.
+- Kelompok11: Jika tim tidak mempunyai SCM (Software Configuration Management) sama sekali, maka akan muncul beberapa masalah. Pertama, tidak akan ada control versi sehingga kode bisa tertimpa ataupun hilang tanpa jejak sehingga tidak bisa diperbaiki secara mudah. Kedua, kolaborasi antar anggota akan lebih susah karena para anggota saling overwrite kodingan anggota lain. Ketiga, tidak ada Riwayat perubahan sehingga melacak penyebab masalahnya akan lebih susah.
+- Kelompok-13: Bakal chaos parah. Tim bakal sering kejadian tindas menindas kode (saling overwriting), file hilang tanpa jejak, dan kita bakal kesulitan banget kalau mau kerja barengan di fitur yang sama dalam waktu bersamaan.
+- Kelompok-4: Singkatnya, tanpa SCM, pengembangan software akan menjadi berantakan. Satu perubahan kecil bisa langsung merusak fitur lain yang tadinya sudah berjalan lancar. Tim developer juga akan kesulitan dan saling bertabrakan saat harus bekerja bareng mengedit kode yang sama. Akibatnya, kualitas aplikasi menjadi tidak terjamin, dan ketika terjadi kendala, tim tidak punya riwayat jejak untuk melacak masalahnya atau untuk memenuhi standar security.
+- Kelompok-10: Kalau tim development sama sekali nggak pakai SCM, project-nya dijamin bakal kacau balau. Masalah paling utama itu source code rawan tertimpa kerjaan orang lain karena nggak ada sistem yang ngatur bentrok antar file. Kita juga bakal terjebak bikin backup manual pakai nama folder aneh-aneh kayak project_v1, project_v2, sampai project_final_banget yang bikin pusing sendiri. Selain itu, kalau tiba-tiba ada update yang bikin sistem error, kita nggak punya history siapa yang ngubah dan apa yang diubah, otomatis kita nggak bisa di-rollback ke versi sebelumnya yang stabil. Ujung-ujungnya kolaborasi tim jadi super lambat, berantakan, dan risiko kodenya rusak total jadi sangat besar.
+- Kelompok-8: tim bisa mengalami konflik kode, kehilangan versi penting, sulit tracking perubahan, bug sulit ditelusuri, dan kolaborasi jadi berantakan. Risiko project gagal atau terlambat juga lebih besar.
+
+----------------------
+
+Post by: weneville
+Content: Kenapa baseline tidak boleh diubah secara langsung?
+Replies:
+- Kelompok-5: Baseline tidak boleh diubah langsung karena jika diubah sembarangan, akan terjadi kekacauan koordinasi antar devloper, hilangnya history perubahan, dan rusaknya stabilitas sistem yang sudah dianggap stabil.
+- Kelompok-1: karena baseline punya fungsi sebagai “ground truth” resmi yang jadi titik referensi terpercaya bagi seluruh tim. perubahan langsung bakal merusak integritas audit, memutus rantai traceability, dan berpotensi merusak pekerjaan anggota tim lain yang bergantung pada baseline yang sama. Selain itu, reproducibility build juga tidak bisa dijamin jika baseline bebas diubah
+- Kelompok-1: Baseline tidak boleh diubah secara langsung karena baseline merupakan versi item konfigurasi yang telah ditinjau dan disepakati secara resmi, yang berfungsi sebagai landasan atau titik awal (starting point) untuk tahapan pengembangan selanjutnya . Untuk menjaga integritas perangkat lunak, setiap perubahan pada baseline harus dilakukan melalui prosedur pengendalian perubahan (change control procedures) yang formal.
+- Kelompok-12: Di dunia SCM, baseline itu ibarat pondasi rumah atau titik checkpoint resmi yang udah disetujui bareng-bareng. Kalau aplikasinya udah mencapai tahap tertentu yang stabil dan fix, versi kodingan itu bakal dikunci dan dijadiin baseline. Nah, alasan paling utama kenapa kita nggak boleh ngotak-ngatik atau ngubah baseline ini secara langsung adalah demi menjaga kestabilan project. Kalau pondasinya diam-diam diubah tanpa sepengetahuan orang lain, semua fitur atau kodingan baru yang lagi dibangun di atas pondasi itu bisa ikut hancur atau berantakan karena pijakannya tiba-tiba beda.  Alasan kedua, ngubah baseline secara langsung bakal ngerusak fungsi "mesin waktu" atau sejarah kodingan kita. Baseline itu fungsinya sebagai patokan pasti buat ngebandingin versi yang lama sama versi yang baru. Kalau patokan awalnya aja diubah-ubah sesuka hati, kita bakal kehilangan jejak soal apa aja yang udah dikerjain, dan versi mana yang sebenernya udah disetujui aman. Ujung-ujungnya, kalau nanti ada error parah, kita nggak punya titik aman yang valid dan terpercaya buat ngelakuin undo.  Makanya, kalau emang harus ada perubahan di kode yang udah jadi baseline, aturannya nggak boleh asal timpa. Kita harus bikin "cabang" atau salinan baru dari baseline tersebut, ngelakuin perbaikan di salinan itu, dites lagi sampai bener-bener aman, baru deh minta persetujuan tim buat dijadiin baseline yang baru. Intinya, baseline itu kayak dokumen resmi yang udah dicap stempel; nggak boleh dicoret-coret pakai tipe-x sembarangan, tapi harus bikin dokumen revisi resmi kalau mau ada perubahan.
+- Kelompok-6: Baseline tidak boleh diubah langsung karena harus tetap stabil, dipercaya, dan bisa dilacak
+- Kelompok15: Baseline tidak boleh diubah secara langsung karena baseline adalah versi resmi yang menjadi acuan dari suatu proyek. Perubahan langsung dapat menyebabkan hilangnya kontrol versi, konflik antar tim, sulit tracking perubahan, dan menurunkan kualitas software. Perubahan harus melalui procedure change management yang akan menghasilkan baseline baru.
+- Kelompok-13: Karena baseline itu jadi titik acuan resmi dalam proyek. Kalau diubah sembarangan, bisa kehilangan patokan awal, akhirnya susah ngecek apakah suatu perubahan itu memang peningkatan, malah bikin error, atau berdampak ke bagian lain.
+- Kelompok-14: Baseline dalam manajemen proyek atau pengembangan perangkat lunak tidak boleh diubah secara langsung karena ia berfungsi sebagai patokan tetap yang digunakan untuk mengukur kinerja, kemajuan, dan keberhasilan suatu proyek. Jika baseline terus-menerus diubah secara informal, tim akan kehilangan kemampuan untuk melakukan perbandingan antara rencana awal dengan realisasi langsung di lapangan, yang mengakibatkan hilangnya kendali terhadap ruang lingkup, jadwal, dan biaya.
+- Kelompok11: Baseline merupakan reference point yang dipercayai untuk membandingkan perubahan atau mendeteksi anomali. Jika baseline diubah, maka kegunaan baseline sebagai reference point tersebut tidak akan berjalan karena sudah tidak akurat.
+- Kelompok-10: Baseline itu ibarat pondasi utama atau titik acuan stabil yang udah disepakati bareng sama tim dalam sebuah project software. Kenapa nggak boleh diubah secara langsung sesuka hati? Karena kalau setiap developer bisa bebas ngedit file intinya tanpa prosedur, project-nya pasti bakal kacau balau dan rawan error parah. Bayangin kalau kamu lagi ngoding fitur baru pakai patokan versi A, tapi tiba-tiba teman ngubah baseline-nya secara sepihak jadi versi B, otomatis kerjaan bakal bentrok dan susah di-merge. Selain itu, ngubah langsung tanpa lewat sistem kontrol (kayak pull request atau formal review) bikin kita kehilangan jejak history commit secara detail. Jadi kalau misal update terbarunya malah ngerusak sistem di production, kita bakal pusing nyari tahu siapa yang salah dan susah banget buat rollback ke versi lama yang masih jalan normal. Makanya, perubahan apa pun ke baseline harus lewat proses persetujuan dulu biar kode tetap konsisten dan aman buat semua orang di tim
+- Kelompok-4: Baseline tidak boleh diubah secara langsung karena baseline merupakan versi resmi yang sudah disetujui untuk menjadi acuan atau patokan utama bagi seluruh tim. Jika diubah sembarangan tanpa melalui prosedur yang jelas, tim akan kehilangan titik referensi yang konsisten, sehingga perubahan-perubahan selanjutnya menjadi berantakan dan sulit untuk dilacak, dibandingkan, maupun dikontrol.
+- Kelompok-7: Karena baseline berfungsi sebagai titik acuan yang sudah disepakati, sehingga jika diubah sembarangan maka acuan tersebut menjadi tidak lagi relevan. Akibatnya tim akan kesulitan dan berisiko menimbulkan inkonsistensi dalam proses pengembangannya. Jika adanya perubahan sebaiknya dilakukan saat proses pembuatan atau proses evaluasi baseline.
+- Kelompok-8: Karena baseline adalah titik acuan resmi dalam project. Jika diubah langsung tanpa kontrol, bisa menyebabkan inkonsistensi, konflik, dan sulit melacak perubahan. Perubahan pada baseline harus lewat change control process.
+
+----------------------
+
+Post by: adminkel2
+Content: Hi All, reply buat jawab ya. Kalau pakai akun selain yang udah kita buatin, tolong cantumin nomer kelompoknya. Thank you dan good luck
+Replies:
+- Kelompok-5: oke
+- Kelompok-12: sipp
+- Kelompok-1: ok
+- Kelompok-14: ok
+- Kelompok-7: Siap
+- Kelompok-13: Ok
+- Kelompok11: Yessirrrr
+- Kelompok-3: kelompok 3 hadir
+
+----------------------
+
+Post by: weneville
+Content: Apa perbedaan dari version control, issue tracking, dan build tool dalam konteks scm?
+Replies:
+- Kelompok-14: Version Control Mengelola perubahan kode dari waktu ke waktu (siapa ubah apa, kapan, bisa rollback). Contoh: Git Issue Tracking Mencatat dan mengelola tugas/bug/fitur yang harus dikerjakan dalam proyek. Contoh: Jira Build Tool Mengotomatisasi proses build (compile, test, packaging aplikasi). Contoh: Maven
+- Kelompok-1: Version Control berfokus pada mengelola berbagai versi dan varian dari item konfigurasi, seperti kode program dan dokumen . Fungsi utamanya adalah melacak riwayat perubahan kode dari waktu ke waktu untuk menjaga integritas perangkat lunak . Issue Tracking berfungsi untuk melacak dan mengelola masalah, bug, serta permintaan penambahan fitur (enhancement requests) yang dilaporkan . Alat seperti Jira atau Bugzilla memberikan pelacakan secara terpusat, notifikasi penugasan, hingga data analitik terkait isu proyek . Build Tools bertujuan untuk mengotomatisasi proses kompilasi source code menjadi program yang siap dijalankan (dieksekusi) . Penggunaan alat seperti Gradle, Maven, atau Make memastikan konsistensi perangkat lunak di berbagai lingkungan, mengurangi risiko kesalahan manusia (human error), dan sangat penting dalam mendukung integrasi berkelanjutan (Continuous Integration) .
+- Kelompok-6: Version control menyimpan perubahan kode, Issue tracking mencatat tiap task yang harus dikerjakan, Build tool adalah tool untuk merakit software
+- Kelompok-12: Perbedaan ketiganya itu gampang banget dibedain dari fungsinya pas kita lagi ngerjain project. Pertama, Version Control itu fokusnya murni ngurusin file kodingan. Dia ibarat mesin waktu yang nyatet semua perubahan kode dan ngasih fitur undo kalau tiba-tiba aplikasinya error. Jadi urusannya bener-bener cuma seputar histori dan keamanan kode yang lagi diketik.  Kedua, Issue Tracking. Kalau yang ini nggak nyentuh kodingan sama sekali. Fungsinya lebih kayak papan to-do list buat ngatur tugas, jadwal, dan nyatet laporan bug yang harus dibenerin. Alat ini dipakai buat nentuin siapa ngerjain fitur apa biar anggota kelompok nggak kebingungan dan nggak ngerjain bagian yang tumpang tindih. Fokusnya murni buat ngurusin tugas dan manajemen kerjaan.  Ketiga, Build Tool. Kodingan mentah yang udah selesai diketik itu kan sebenernya nggak bisa langsung di-klik dan jalan gitu aja. Kodenya harus di-"masak", digabungin, dan diproses dulu biar jadi satu aplikasi utuh yang siap dipakai. Nah, Build Tool inilah yang otomatis ngerjain proses itu, jadi tugas utamanya adalah ngubah barisan kode mentah jadi aplikasi yang beneran jadi.  Singkatnya, alur kerjanya itu saling nyambung. Kita bagi-bagi tugas lewat Issue Tracking, lalu mulai ngetik kode dan nyimpen perubahannya dengan aman pakai Version Control, dan terakhir kodenya diolah jadi aplikasi siap pakai menggunakan Build Tool.
+- Kelompok-5: Version Control (contohnya Git) dipakai buat ngatur source code, nyatet setiap perubahan, ngelola branch, merge code, dan memungkinkan rollback kalau ada error. Fungsinya buat menjaga codebase tetap rapi dan stabil. Issue Tracking (seperti Jira atau GitHub Issues) fokus ke pencatatan task, bug, atau request fitur dalam bentuk ticket. Sistem ini membantu tim tahu apa yang harus dikerjakan dan alasan perubahan kode dilakukan. Build Tool (misalnya Apache Maven atau Webpack) bertugas meng-compile code, mengatur dependency, menjalankan testing, lalu mengubah source code jadi software yang siap dijalankan.
+- Kelompok11: Dalam konteks SCM, version control, issue tracking, dan build tool punya peran yang berbeda tapi saling melengkapi. Version control digunakan untuk mengelola perubahan pada source code, seperti menyimpan history, melakukan branching, dan menggabungkan code dari beberapa developer. Issue tracking berfungsi untuk mengatur pekerjaan tim, seperti mencatat bug, fitur yang harus dibuat, dan memantau progress pengerjaan. Sementara itu, build tool digunakan untuk mengubah code menjadi aplikasi yang bisa dijalankan, termasuk proses compile, mengatur dependency, dan menjalankan testing. Jadi, secara sederhana, version control fokus ke code, issue tracking ke manajemen tugas, dan build tool ke proses pembuatan aplikasinya.
+- Kelompok-10: Version Control itu fokusnya murni ke pelacakan source code, contohnya kayak Git. Tool ini nyimpen semua history perubahan file (commit), jadi kalau kode yang baru di-upload ternyata malah bikin sistem error, kita bisa langsung rollback ke versi lama yang masih aman. Nah, kalau Issue Tracking itu bukan buat nyimpen kode, tapi buat manajemen tugas dan nge-track bug, contohnya Jira atau Trello. Di sini kita bisa nyatat fitur apa yang mau dibikin, error apa yang harus di-patch, dan siapa dari anggota tim yang lagi ditugasin ngerjain bagian tersebut. Terakhir, Build Tool itu fungsinya murni buat otomatisasi. Daripada kita ribet compile kode, masukin dependencies, dan jalanin testing secara manual satu-satu lewat terminal, tool kayak Maven atau Make bakal otomatis ngerakit source code mentah kita jadi aplikasi atau file eksekusi yang siap dipakai
+- Kelompok15: Version Control System berfungsi untuk mengelola perubahan source code dari waktu ke waktu. VCS mencatat revisi, memungkinkan kolaborasi antar pengembang, dan menyediakan fitur rollback. Berbeda dari VCS, Issue Tracking berfungsi untuk mengelola daftar tugas, bug, dan permintaan fitur baru. Ini adalah sistem manajemen proyek yang memastikan setiap masalah terdokumentasi dan memiliki penanggung jawab. Terakhir Build Tool berfungsi untuk Mengotomatiskan proses pengubahan source code menjadi artefak yang executable. Bertugas untuk mengcompile code, test running automation, dan mengcompile code menjadi format seperti .jar atau .exe.
+- Kelompok-4: Version Control Berfungsi melacak riwayat perubahan software dari waktu ke waktu untuk memudahkan debugging dan memungkinkan rollback ke versi sebelumnya. Issue Tracking Berfungsi mengelola dan melacak semua laporan masalah, bug, serta permintaan fitur baru dalam satu sistem terpusat. Build Tools Berfungsi mengotomatisasi proses kompilasi source code menjadi program yang dapat dijalankan secara konsisten, cepat, dan bebas dari human error.
+- Kelompok-13: Kalau Version Control itu tempat buat letakin kode (misalnya Github), Issue Tracking itu daftar "to do list" atau bug yang harus diberesin(kayak jira/trello), sedangkan Build Tool itu yang tugasnya ngerakit kode kita jadi aplikasi yang siap jalan (kayak maven atau npm).
+- Kelompok-7: Version control: menunjukkan perubahan yang dialami dalam sistem yang memudahkan debugging, rollback, dll. Issue tracking: melacak semua masalah dan mencatatnya dalam satu sistem yang bisa dilihat tim. build tool: automatisasi proses komplikasi source code jadi satu program yang dapat dieksekusi yang membuat proses build menjadi konsisten, cepat, dan bebas dari human error
+- Kelompok-8: Version Control digunakan untuk mengelola perubahan source code, contohnya Git. Issue Tracking digunakan untuk mencatat dan memantau bug, task, atau feature request, contohnya Jira. Build Tool digunakan untuk otomatisasi compile, testing, dan packaging software, contohnya Maven atau Gradle. Ketiganya mendukung SCM dari sisi kontrol code, manajemen pekerjaan, dan proses build.
+
+----------------------
+
+Post by: weneville
+Content: Apa tujuan utama dari Software Configuration Management dalam pengembangan software?
+Replies:
+- Kelompok-5: menjamin integritas software sepanjang hidup pengembangannya. SCM bertindak sebagai sistem kontrol yang mengelola perubahan, melacak versi, dan memastikan pengerjaan ada di code yang Benar.
+- Kelompok-12: Tujuan utama dari Software Configuration Management (SCM) itu sebenernya buat ngontrol semua perubahan yang terjadi selama kita bikin software, biar project-nya nggak berantakan atau chaos. Kan kalau lagi ngoding apalagi bareng-bareng, pasti banyak banget tuh file yang diubah, ditambah, atau malah ga sengaja kehapus.  Nah, SCM ini ibaratnya kayak buku catetan atau mesin waktu buat kodingan kita. Dia bakal nyatet siapa aja yang ngubah kode, bagian mana yang diubah, dan kapan diubahnya. Jadi kalau tiba-tiba ada bug atau error parah, kita nggak perlu panik karena bisa gampang di-undo atau balik ke versi kodingan sebelumnya yang masih aman.  Selain itu, SCM juga ngebantu banget biar kerjaan kita nggak saling timpa satu sama lain pas lagi ngerjain project bareng tim. Intinya, SCM mastiin proses development tetep rapi, aman, dan ke-track dengan jelas dari awal sampai aplikasinya beneran jadi.
+- Kelompok-7: - Mengontrol perubahan dalam software
+- Kelompok-6: Mengelola dan mengontrol perubahan pada software agar tetap teratur dan bisa diandalkan
+- Kelompok-10: Tujuan utama dari Software Configuration Management (SCM) dalam Software Engineering itu simpelnya buat ngelacak dan ngendaliin setiap perubahan kode atau aset selama project berjalan.  Bayangin kalau di tim developer ada banyak orang yang ngoding di file yang sama secara barengan, pasti bakal bentrok dan error semua kalau nggak ada sistem yang ngatur. Nah, SCM ini berfungsi mastiin semua perubahan itu tercatat rapi di sebuah history, jadi kita tahu pasti siapa yang ngubah, apa yang diubah, dan kapan diubah. Konsepnya sama kayak pas kita pakai Git, kalau misal ada update terbaru yang rilis tapi malah ngerusak sistem di production, kita bisa dengan gampang rollback ke versi commit lama yang masih stabil. Intinya, SCM dipakai buat menjaga konsistensi software dan bikin kolaborasi tim tetap aman tanpa takut source code aslinya berantakan atau tertimpa kerjaan orang lain
+- Kelompok-13: Kelompok 13 • Mengontrol perubahan dalam software • Mendukung kolaborasi tim • Menjaga kualitas software • Menyediakan traceability perubahan
+- Kelompok-7: Mendukung kolaborasi tim, menjaga kualitas software, menyediakan traceability perubahan
+- Kelompok-14: Dalam pengembangan perangkat lunak, SCM berperan untuk mengontrol setiap perubahan yang terjadi pada software agar tetap terstruktur dan terdokumentasi dengan baik. Selain itu, SCM juga mendukung kolaborasi tim dengan memungkinkan banyak developer bekerja secara bersamaan tanpa konflik yang tidak terkelola. Dengan proses yang teratur, kualitas software dapat lebih terjaga karena setiap perubahan dapat diuji dan divalidasi. Tidak kalah penting, SCM menyediakan traceability, yaitu kemampuan untuk melacak riwayat perubahan secara jelas sehingga memudahkan identifikasi masalah maupun audit di kemudian hari.
+- Kelompok15: SCM bertujuan untuk meminimalkan risiko kesalahan, meningkatkan produktivitas tim, dan memastikan kualitas perangkat lunak tetap terjaga meskipun terjadi banyak perubahan selama proses developnya. Contohnya kaya versioning,DLL
+- Kelompok11: Tujuan utama dari Software Configuration Management (SCM) adalah untuk mengatur dan mengontrol semua perubahan yang terjadi dalam pengembangan software supaya tetap rapi, konsisten, dan bisa dilacak. Dengan SCM, setiap perubahan pada code akan tercatat dengan jelas siapa yang mengubah, kapan diubah, dan apa yang diubah, sehingga memudahkan kolaborasi dalam tim dan mengurangi risiko error atau konflik. Selain itu, SCM juga membantu memastikan bahwa setiap versi software bisa dikelola dengan baik, termasuk jika suatu saat perlu kembali ke versi sebelumnya yang lebih stabil.
+- Kelompok-4: Software Configuration Management (SCM) bertujuan utama untuk mengendalikan dan melacak semua perubahan pada perangkat lunak guna memastikan integritas sistem sepanjang siklus pengembangannya. Praktik ini sangat esensial karena dapat mencegah munculnya error dari perubahan yang tidak terkelola, sekaligus memfasilitasi kelancaran kolaborasi bagi tim developer yang bekerja bersamaan. Selain itu, SCM berfungsi untuk menjaga kualitas perangkat lunak secara konsisten dan mendokumentasikan jejak audit (audit trail) untuk keperluan pelacakan serta kepatuhan terhadap regulasi industri.
+- Kelompok-8: mengelola perubahan pada software secara terkontrol agar development lebih terorganisir, konsisten, dan minim error. SCM membantu tracking perubahan kode, menjaga integritas project.
+
+----------------------
+
+
+padlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Post by: rizzky
+Content: Menurut kalian, apakah SCM masih relevan di era Agile dan DevOps yang serba cepat?
+Replies:
+- Kelompok-5: SCM tetap sangat relevan karena menjadi fondasi otomatisasi dalam CI/CD dan DevOps yang memungkinkan tim bekerja cepat dengan risiko minimal, memastikan setiap perubahan kode tetap terlacak, aman, dan dapat dipulihkan kapan saja
+- Kelompok-12: justru SCM itu makin relevan banget, bahkan udah jadi "nyawa" utamanya Agile sama DevOps. Tanpa SCM, cara kerja yang serba cepet itu malah nggak bakal bisa jalan sama sekali dan jatuhnya bakal jadi bencana.  Bayangin gini, Agile dan DevOps itu ibarat kita bawa mobil balap yang ngebut banget karena tim dituntut buat terus-terusan bikin fitur baru dan rilis update dengan cepet. Nah, SCM ini ibarat kemudi dan remnya. Kalau kita ngebut ngerjain kodingan bareng-bareng tapi nggak ada sistem yang ngatur historinya, nyimpen baseline, atau ngecegah kode biar nggak saling tabrakan, project-nya udah pasti langsung hancur berantakan di tengah jalan.  Terus, di dunia DevOps itu kan semuanya serba otomatis. Misalnya, pas kodingan beres, sistem bakal otomatis nge-tes dan nge-rilis aplikasinya. Nah, sistem otomatis ini dapet file kodingan yang bener dan aman dari mana? Ya ngambilnya dari SCM. Jadi, SCM justru jadi fondasi paling wajib biar tim bisa kerja super ngebut tapi project-nya tetep rapi, stabil, dan aman dari error.
+- Kelompok11: SCM justru menjadi tulang punggung otomatisasi modern, karena tanpa version management yang teratur, alur kerja CI/CD tidak akan memiliki database yang konsisten untuk menjalankan pengujian dan penyebaran aplikasi secara otomatis dan cepat.
+- Kelompok15: Masih, karena SCM bisa dibilang fondasi buat Agile. Kaya  CI/CD kalo ga ada SCM yang proper nati CI/CDnya bakal banyak masalah. Selain itu SCM bisa digunakan untuk baselining agar pengembangan yang cepat itu ga berbenturan. Kesimpulannya tetep masih kepake tapi dengan sedikit perubahan dan juga adaptasi
+- Kelompok-7: SCM tetap sangat relevan, hanya saja bentuknya telah nerubah dari proses yang kaku menjadi lebih otomatis dengan tools yang mendukung seperti GitHub dan pipeline seperti Jenkins, sehingga meskipun pengembangan berjalan cepat, setiap perubahan tetap dapat dilacak, dikontrol, dan dikembalikan jika terjadi kesalahan.
+- Kelompok-6: SCM tidak tergantikan. Justru di era yang serba cepat, SCM adalah yang membuat kecepatan tetap terarah, aman, dan bisa dipercaya.
+- Kelompok-14: SCM justru menjadi semakin krusial dalam era Agile dan DevOps karena bertindak sebagai fondasi utama yang memungkinkan otomatisasi dan kolaborasi paralel dalam ritme kerja yang cepat. Tanpa SCM, siklus CI/CD tidak akan bisa berjalan karena sistem tidak memiliki pemicu otomatis untuk melakukan pengujian maupun penyebaran kode setiap kali ada perubahan. Selain itu, fitur branching dalam SCM memungkinkan tim Agile untuk mengembangkan berbagai fitur secara bersamaan tanpa saling mengganggu, sekaligus memberikan jaring pengaman berupa kemampuan rollback instan jika iterasi cepat tersebut menyebabkan kegagalan sistem.
+- Kelompok 15:  Masih relevan. SCM merupakan fondasi yang memastikan kecepatan dalam Agile dan DevOps tanpa merusak kualitas sistem.  1. SCM memastikan integritas dan keterlacak software sepanjang siklus hidup pengembangan.  2. SCM memfasilitasi koordinasi antar developer yang bekerja pada basis kode yang sama agar tetap terorganisir dan konsisten.
+- Kelompok-1: Agile and DevOps encourage fast and frequent changes, but that also means teams need stronger control over code, versions, etc. SCM helps make sure every change is tracked and reviewed. Also, can be rolled back if something goes wrong. Without SCM, rapid development could become risky and messy because teams might lose track of what changed, who changed it, or which version is running in production.
+- Kelompok-13: Masih sangat relevan, bahkan bisa jadi fondasi. Tanpa SCM yang rapi, kita nggak bakal bisa punya CI/CD (yang otomasi rilis). Agile itu geraknya cepat, dan SCM itu yang mastiin kecepatan itu tetap aman dan terkontrol.
+- Kelompok-8: Sangat relevan dan lebih penting. Agile dan DevOps butuh perubahan cepat dan frequent release, sehingga SCM membantu menjaga kontrol versi, automasi, kolaborasi, dan stabilitas di tengah perubahan yang cepat.
+- Kelompok-4: SCM sangat relevan dan justru menjadi pondasi utama di era Agile dan DevOps. Praktik SCM modern sangat mendukung pergerakan rilis yang serba cepat melalui Integrasi CI/CD, Proses SCM harus terintegrasi secara mulus dengan pipeline CI/CD agar pengembangan tidak menjadi lambat dan terhindar dari celah. Otomatisasi, Tugas-tugas yang berulang dapat bekerja secara otomatis untuk membebaskan developer dan mengurangi human error.  Menjaga Kualitas, Kecepatan kerja selalu diimbangi dengan penerapan peer code review serta pengujian (testing) otomatis di setiap tahap agar bug dapat ditemukan lebih awal.
+- Kelompok-10: Masih relevan. Kenapa? Di era Agile dan DevOps, siklus update software itu serba cepat dan kodenya diubah terus-menerus sama banyak developer. Nah, DevOps itu kan sangat bergantung sama otomatisasi kayak CI/CD (Continuous Integration/Continuous Deployment).  Pipeline otomatis ini butuh satu sumber utama yang nyimpen versi kode paling stabil. Tanpa SCM kayak Git, mustahil kita bisa ngelakuin testing atau deploy otomatis karena sistem nggak tahu history kodenya dan versi mana yang mau ditarik. Bayangin aja kalau tim dipaksa rilis cepat tapi nggak ada yang ngelacak siapa yang ngubah file atau nggak ada opsi buat rollback pas tiba-tiba kodenya bikin server down. Rilisnya emang cepat, tapi hancurnya juga cepat.
+
+----------------------
+
+Post by: weneville
+Content: Berikan contoh kasus yang mencerminkan pentingnya SCM
+Replies:
+- Kelompok-12: Bayangin deh lagi kerkel H-1 sebelum deadline, aplikasinya sebenernya udah jalan lancar. Tapi malemnya, pas lagi lembur sambil minum espresso, Jovan iseng nambahin fitur baru di kodingan utama tanpa bilang-bilang. Besok paginya pas project-nya mau di-run, tiba-tiba malah error total.  Karena kalian nggak pakai SCM, nggak ada yang tau pasti baris kode mana aja yang diotak-atik sama Jovan semalem. Akhirnya, kalian terpaksa panik dan ngebongkar kodingannya satu-satu secara manual buat nyari bug-nya. Parahnya lagi, kalian nggak punya file backup versi kodingan kemarin yang masih bener, jadi pilihannya cuma ngabisin waktu berjam-jam buat benerin atau ngulang dari awal.  Nah, coba bandingin kalau kalian pakai SCM. SCM bakal nyatet dengan jelas histori perubahan yang dilakuin Jovan, lengkap jam berapa dan di baris mana aja. Jadi pas sadar aplikasinya rusak, kamu tinggal pencet undo atau revert buat balikin project-nya ke versi kemarin yang masih aman.
+- Kelompok11: SCM berfungsi sebagai pelindung integrity kode yang mencegah data tertimpa secara tidak sengaja dan menyediakan opsi rollback untuk memulihkan sistem dengan cepat jika terjadi error saat kolaborasi tim.
+- Kelompok-14: Misalnya ketika dua developer mengerjakan fitur berbeda pada file yang sama, misalnya fitur "Promo" dan fitur "Pembayaran". Tanpa SCM, developer yang terakhir menyimpan file akan menghapus logika fitur yang dikerjakan oleh developer pertama tanpa ada peringatan sistem. Akibatnya, saat aplikasi launch, salah satu fitur akan hilang sepenuhnya atau menyebabkan sistem crash, memaksa tim untuk menulis ulang kode secara manual dan membuang waktu hanya untuk mencari tau bagian mana yang hilang atau rusak.
+- Kelompok-1: A company releases a mobile app update, but users start reporting crashes. Because the team uses SCM, they can quickly check which code changes, library versions, and configuration files were included in that release. They identify the faulty change, roll back to the previous stable version, and eventually release a fix. SCM allowed helped the team track changes, find the problem faster and recover faster.
+- Kelompok-6: Bayangkan sebuah tim sedang mengembangkan aplikasi e-wallet dengan deadline yang ketat, di mana setiap developer bekerja cepat menambahkan fitur dan memperbaiki bug, tetapi tanpa menggunakan Software Configuration Management (SCM). Mereka saling bertukar file secara manual tanpa pencatatan yang jelas, sehingga ketika aplikasi dirilis dan tiba-tiba muncul bug serius seperti login error dan fitur yang tidak berjalan, tidak ada satu pun yang tahu perubahan mana yang menjadi penyebabnya. Situasi ini berubah menjadi kekacauan karena tim harus menelusuri kode satu per satu tanpa arah yang pasti. Namun, jika SCM digunakan, setiap perubahan akan tercatat rapi melalui version control, lengkap dengan siapa yang mengubah, kapan, dan untuk tujuan apa, sehingga ketika bug muncul, tim dapat dengan cepat melacak sumber masalah atau bahkan melakukan rollback ke versi sebelumnya yang stabil. Dengan begitu, waktu penanganan yang semula bisa memakan berjam-jam atau bahkan hari dapat dipangkas menjadi jauh lebih singkat, sekaligus menjaga stabilitas dan kepercayaan pengguna terhadap aplikasi.
+- Kelompok-5: Misalnya, beberapa developer mengerjakan fitur checkout secara bersamaan. Tanpa Version Control seperti Git, perubahan kode bisa bentrok atau tertimpa. Kalau muncul bug, tanpa Issue Tracking seperti Jira, tim akan sulit melacak sumber masalah. Tanpa Build Tool seperti Apache Maven, aplikasi juga bisa jalan di komputer developer tapi error saat di server.
+- Kelompok-7: Bayangkan sebuah tim developer sedang mengerjakan aplikasi dan semuanya berjalan lancar menjelang deadline, lalu salah satu anggota tim melakukan perubahan pada kode utama tanpa memberi tahu yang lain, dan keesokan harinya aplikasi tiba-tiba error sehingga tidak bisa dijalankan; karena tim tidak menggunakan SCM, mereka tidak memiliki riwayat perubahan sehingga tidak tahu bagian mana yang menyebabkan masalah, tidak bisa melacak siapa yang mengubah kode tersebut, dan tidak memiliki cadangan versi sebelumnya yang masih stabil, akibatnya mereka harus memeriksa kode satu per satu secara manual yang memakan waktu lama bahkan berisiko mengulang pekerjaan dari awal, sedangkan jika menggunakan SCM seperti Git melalui platform seperti GitHub, setiap perubahan akan tercatat dengan jelas sehingga tim dapat dengan cepat menemukan sumber error dan mengembalikan kode ke versi sebelumnya (rollback) tanpa mengganggu progres proyek secara keseluruhan.
+- Kelompok15: Sebuah tim pengembang sedang mengerjakan pembaruan aplikasi e-commerce. Developer A memperbaiki bug di sistem pembayaran, sementara Developer B menambahkan fitur diskon baru. Keduanya mengubah file yang sama secara bersamaan tanpa SCM yang ketat.  Tanpa SCM, developer B dapat menimpa perubahan yang dibuat oleh developer A saat mengunggah code ke server.
+- Kelompok-13: Misalnya tim lagi ngerjain fitur baru selama seminggu, eh ternyata pas mau dirilis kodenya malah bikin sistem crash total. Berkat SCM, kita tinggal pencet tombol "Rollback" buat balikin aplikasi ke kondisi stabil kemarin dalam hitungan detik, tanpa harus pusing benerin manual satu satu.
+- Kelompok-8: Contohnya dua developer mengedit file yang sama tanpa version control, lalu salah satu perubahan tertimpa. Dengan SCM seperti Git, perubahan bisa di-merge, konflik bisa diselesaikan, dan history perubahan tetap tercatat.
+- Kelompok-4: Developer A baru saja menyelesaikan perbaikan untuk sebuah celah security yang kritis pada sistem. Di hari yang sama, Developer B sedang mengerjakan penambahan fitur profil pengguna dan bekerja secara bersamaan pada basis kode yang sama. Karena tidak ada kontrol versi dan manajemen perubahan, Developer B langsung menyimpan kodenya, yang tanpa sengaja menimpa dan menghapus perbaikan security dari Developer A. Ini adalah contoh nyata di mana tanpa kontrol perubahan yang baik, satu perubahan kecil bisa merusak fitur lain yang sudah berjalan.   Saat aplikasi dirilis dan celah tersebut akhirnya dimanfaatkan oleh pihak luar, tim kebingungan saat melakukan investigasi karena mereka tidak memiliki jejak audit (audit trail) atas perubahan yang terjadi.
+- Kelompok-10: Di tim itu, si A dan si B kebetulan ditugasin ngedit file yang sama, misalnya file payment.php. Si A udah selesai benerin bug di fitur transfer bank, terus dia save dan upload file-nya. Tapi di waktu yang sama, si B ternyata juga lagi ngoding fitur e-wallet di file yang sama dan langsung numpuk file yang baru aja di-upload si A. Hasilnya? Kodingan perbaikan bug milik si A hilang total tertimpa kerjaan si B. Kalau mereka nggak pakai SCM, mereka pasti bakal pusing nyari tahu kapan dan kenapa kodenya hilang, ujung-ujungnya terpaksa ngoding ulang dari awal.
+
+----------------------
+
+Post by: weneville
+Content: Kapan waktu paling tepat untuk membuat baseline dalam project?
+Replies:
+- Kelompok-5: Baseline dibuat setiap kali sebuah fase pengembangan atau fitur penting telah selesai diuji, disetujui secara resmi, dan dinyatakan stabil agar bisa digunakan sebagai titik acuan yang aman sebelum masuk ke step berikutnya
+- Kelompok-14: Waktu yang tepat untuk membuat baseline dalam project adalah saat suatu bagian pekerjaan sudah stabil dan disepakati sebagai acuan. Baseline dibuat ketika kondisi project sudah cukup matang sehingga bisa dijadikan patokan tetap untuk perkembangan selanjutnya
+- Kelompok-1: Waktu yang tepat untuk membuat baseline adalah ketika software sudah melalui proses review, dan sudah disetejui oleh Tim untuk menjadikan versi tersebut sebagai acuan referensi (baseline).
+- Kelompok-12: Waktu paling tepat buat bikin baseline itu pas project kamu udah nyentuh titik pencapaian penting alias milestone, atau pas satu tahap kerjaan udah bener-bener beres dan disetujui bareng-bareng. Misalnya, pas semua fitur utama udah selesai dikoding, udah dites jalan lancar, dan dipastiin nggak ada error yang parah. Nah, di momen yang lagi aman dan stabil inilah kodingannya "dikunci" dan dijadiin baseline.  Selain itu, baseline juga wajib banget dibikin tepat sebelum aplikasinya dirilis ke pengguna atau sebelum masuk ke fase development yang baru. Tujuannya biar kalau nanti pas lagi nambahin fitur baru kodingannya malah hancur, atau aplikasinya tiba-tiba bermasalah pas dipakai, kita punya patokan versi stabil yang jelas buat ngebenerinnya. Intinya, baseline dibikin tiap kali tim sepakat kalau versi kodingan saat itu udah mantap, jadi disimpan sebagai patokan resmi sebelum lanjut ngotak-ngatik hal lain yang berisiko.
+- Kelompok-7: Waktu paling tepat untuk membuat baseline dalam sebuah project adalah pada momen ketika suatu bagian pekerjaan sudah mencapai kondisi stabil, disetujui, dan siap dijadikan acuan, misalnya setelah kebutuhan sistem (requirement) selesai dan divalidasi, setelah desain disepakati, atau setelah sebuah fitur atau versi aplikasi telah lolos testing dan siap dirilis; baseline tidak dibuat sembarangan di tengah perubahan yang masih sering terjadi, karena tujuannya adalah menjadi titik referensi yang jelas untuk membandingkan perubahan di masa depan, sehingga dalam praktik modern yang mengadopsi Agile dan DevOps, baseline biasanya dibuat lebih sering tetapi dalam lingkup kecil, seperti saat setiap sprint selesai atau ketika akan melakukan rilis versi tertentu, agar tim tetap bisa bergerak cepat tanpa kehilangan kontrol terhadap versi yang sudah dianggap stabil.
+- Kelompok15: Waktu paling tepat untuk membuat baseline adalah pada milestone penting dari suatu proyek, yaitu setelah selesainya dokumen, desain, modul, atau versi software, terus direview, disetujui, dan cukup stabil untuk dijadikan acuan resmi bagi tahap berikutnya.
+- Kelompok-6: Baseline dibuat saat proyek sudah stabil dan siap dijadikan acuan, biasanya setelah tahap penting selesai dan lolos testing atau sebelum rilis. Intinya, saat versi tersebut cukup matang untuk dijadikan patokan.
+- Kelompok-13: Pas kita udah nyampe milestone penting. Contohnya pas akhir sebuah sprint, setelah selesai testing yang clean, atau tepat sebelum aplikasi mau di deploy buat produksi.
+- Kelompok-4: Waktu paling tepat untuk membuat baseline adalah setelah sebuah versi software atau dokumen selesai di-review dan resmi disetujui. Pada titik inilah hasil kerja dikunci menjadi acuan utama bagi tim, sehingga tidak bisa lagi diubah sembarangan tanpa melewati prosedur change control yang jelas.
+- Kelompok-8: Biasanya dibuat saat milestone penting, misalnya setelah requirement disetujui, desain selesai, atau sebelum release/testing besar. Intinya saat ada versi yang cukup stabil untuk dijadikan acuan.
+- Kelompok-10: Waktu paling tepat buat bikin baseline itu pas kita udah nyelesaiin sebuah milestone penting dalam project dan hasil kerjanya udah di-review serta disetujui bareng-bareng sama tim. Contohnya, pas fase pengumpulan requirements udah final, atau pas desain arsitektur udah fix sebelum kita mulai ngetik kode
+- Kelompok11: Baseline dalam project paling tepat dibuat pada setiap tahap penting ketika suatu deliverable sudah cukup stabil dan telah disetujui oleh stakeholder, seperti setelah requirement selesai, desain sistem ditetapkan, hasil development sudah stabil, dan sebelum proses release. Tujuannya adalah agar setiap perubahan setelah titik tersebut bisa dikontrol dengan jelas, sehingga memudahkan tracking, pengelolaan versi, serta menghindari perubahan yang tidak terstruktur selama proses pengembangan.
+
+----------------------
+
+Post by: weneville
+Content: Apa yang terjadi ketika tim development tidak menggunakan SCM sama sekali?
+Replies:
+- Kelompok-12: Kalau tim development nggak pakai SCM sama sekali, hal pertama yang bakal kejadian adalah chaos waktu gabungin kodingan. Bayangin aja, kalau kita lagi ngerjain satu file yang sama bareng temen, terus pas mau disatuin malah kodingan kita ketimpa sama kodingan mereka. Akhirnya, ada baris kode yang hilang atau malah harus ngetik ulang dari awal karena nggak ada sistem otomatis yang ngatur bentrok atau conflict antar kode.  Terus, masalah fatal lainnya adalah kita nggak punya fitur undo kalau tiba-tiba project-nya error. Pas lagi asik ngoding terus tiba-tiba aplikasinya crash parah, kita bakal susah banget buat ngelacak siapa yang terakhir ngubah dan bagian mana yang bikin rusak. Mau nggak mau harus ngecek kode secara manual satu-satu, dan kita nggak bisa dengan gampang balik ke versi kodingan kemarin yang masih jalan normal.  Terakhir, proses kolaborasi bakal jadi super manual dan rawan banget kehilangan data. Tim yang nggak pakai SCM biasanya bakal oper-operan file source code lewat flashdisk, WhatsApp, atau Google Drive pakai nama file kayak "Project_Final", "Project_Final_Beneran", sampai "Project_Revisi_Fix_Banget". Selain bikin pusing nentuin mana versi yang paling update, kalau sewaktu-waktu laptop salah satu anggota tim rusak, kodingan yang ada di dalemnya bisa ikut lenyap tanpa sisa.
+- Kelompok-14: Tanpa SCM, tim pengembangan akan terjebak dalam kekacauan kolaborasi karena tidak adanya sistem yang mengatur sinkronisasi kode antar pengembang. Risiko terbesar adalah terjadinya overwriting, di mana pekerjaan satu anggota tim tertimpa oleh anggota lain secara tidak sengaja saat menyimpan file di folder bersama. Selain itu, tim kehilangan kemampuan untuk melakukan rollback ke versi sebelumnya jika terjadi error fatal, serta tidak memiliki rekam jejak tentang siapa yang mengubah baris kode tertentu dan apa alasannya.
+- Kelompok-5: Kalau tim development sama sekali tidak memakai Software Configuration Management (SCM), proses pembuatan software bisa jadi berantakan dan rawan error. Tanpa Version Control seperti Git, developer biasanya harus tukar file secara manual, yang berisiko bikin kode tertimpa atau hilang. Kalau ada kesalahan besar, tim juga sulit melakukan rollback ke versi yang sebelumnya stabil karena tidak ada riwayat perubahan yang jelas. Selain itu, tanpa SCM, proses tracking juga jadi susah. Saat muncul bug, tim akan kesulitan mencari bagian kode yang bermasalah, siapa yang mengubahnya, dan kenapa perubahan itu dibuat. Ditambah lagi, tanpa Build Tool seperti Apache Maven, sering muncul masalah "works on my machine", jalan di komputer developer, tapi error saat dijalankan di server karena dependency dan konfigurasi tidak seragam.
+- Kelompok-5: Kalau tim development sama sekali tidak memakai Software Configuration Management (SCM), proses pembuatan software bisa jadi berantakan dan rawan error. Tanpa Version Control seperti Git, developer biasanya harus tukar file secara manual, yang berisiko bikin kode tertimpa atau hilang. Kalau ada kesalahan besar, tim juga sulit melakukan rollback ke versi yang sebelumnya stabil karena tidak ada riwayat perubahan yang jelas. Selain itu, tanpa SCM, proses tracking juga jadi susah. Saat muncul bug, tim akan kesulitan mencari bagian kode yang bermasalah, siapa yang mengubahnya, dan kenapa perubahan itu dibuat. Ditambah lagi, tanpa Build Tool seperti Apache Maven, sering muncul masalah "works on my machine", jalan di komputer developer, tapi error saat dijalankan di server karena dependency dan konfigurasi tidak seragam.
+- Kelompok15: Jika suatu tim development tidak menggunakan SCM, proyek bisa mengalami kekacauan versi, konflik antar developer, sulit melacak perubahan, tidak bisa rollback dengan mudah, testing tidak akan konsisten, dan risk kegagalan release meningkat.
+- Kelompok-7: Tanpa SCM, tim development akan kesulitan mengontrol perubahan karena tidak ada pencatatan versi, sehingga tidak tahu siapa mengubah apa dan kapan, yang berujung pada konflik kode, bug sulit dilacak, dan tidak bisa rollback saat terjadi error; tanpa tools seperti Git atau GitHub, kolaborasi jadi tidak efisien, perubahan bisa saling menimpa, dan tim berisiko harus memperbaiki manual atau bahkan mengulang pekerjaan dari awal.
+- Kelompok-6: Kalau tim developer tidak memakai SCM sama sekali, proyek mereka mudah jadi kacau karena tidak ada kontrol versi, tidak ada catatan perubahan, dan tidak ada koordinasi yang jelas. File bisa saling tertimpa, bug sulit dilacak, dan tim tidak tahu siapa mengubah apa. Saat terjadi error atau rilis, semuanya jadi lambat dan berisiko tinggi karena tidak ada acuan versi yang stabil. Akhirnya, pengembangan jadi tidak efisien dan rawan kesalahan.
+- Kelompok-1: Jika Tim menjaankan project tanpa menjalankan SCM, project akan beresiko mengalami perupahan yang tak terkendali. Perubahan tak terkendali ini nantinya akan menyebabkan ketidak konsistenan dalam sistem dan akhirnya akan mengalami system downtime.
+- Kelompok11: Jika tim tidak mempunyai SCM (Software Configuration Management) sama sekali, maka akan muncul beberapa masalah. Pertama, tidak akan ada control versi sehingga kode bisa tertimpa ataupun hilang tanpa jejak sehingga tidak bisa diperbaiki secara mudah. Kedua, kolaborasi antar anggota akan lebih susah karena para anggota saling overwrite kodingan anggota lain. Ketiga, tidak ada Riwayat perubahan sehingga melacak penyebab masalahnya akan lebih susah.
+- Kelompok-13: Bakal chaos parah. Tim bakal sering kejadian tindas menindas kode (saling overwriting), file hilang tanpa jejak, dan kita bakal kesulitan banget kalau mau kerja barengan di fitur yang sama dalam waktu bersamaan.
+- Kelompok-4: Singkatnya, tanpa SCM, pengembangan software akan menjadi berantakan. Satu perubahan kecil bisa langsung merusak fitur lain yang tadinya sudah berjalan lancar. Tim developer juga akan kesulitan dan saling bertabrakan saat harus bekerja bareng mengedit kode yang sama. Akibatnya, kualitas aplikasi menjadi tidak terjamin, dan ketika terjadi kendala, tim tidak punya riwayat jejak untuk melacak masalahnya atau untuk memenuhi standar security.
+- Kelompok-10: Kalau tim development sama sekali nggak pakai SCM, project-nya dijamin bakal kacau balau. Masalah paling utama itu source code rawan tertimpa kerjaan orang lain karena nggak ada sistem yang ngatur bentrok antar file. Kita juga bakal terjebak bikin backup manual pakai nama folder aneh-aneh kayak project_v1, project_v2, sampai project_final_banget yang bikin pusing sendiri. Selain itu, kalau tiba-tiba ada update yang bikin sistem error, kita nggak punya history siapa yang ngubah dan apa yang diubah, otomatis kita nggak bisa di-rollback ke versi sebelumnya yang stabil. Ujung-ujungnya kolaborasi tim jadi super lambat, berantakan, dan risiko kodenya rusak total jadi sangat besar.
+- Kelompok-8: tim bisa mengalami konflik kode, kehilangan versi penting, sulit tracking perubahan, bug sulit ditelusuri, dan kolaborasi jadi berantakan. Risiko project gagal atau terlambat juga lebih besar.
+
+----------------------
+
+Post by: weneville
+Content: Kenapa baseline tidak boleh diubah secara langsung?
+Replies:
+- Kelompok-5: Baseline tidak boleh diubah langsung karena jika diubah sembarangan, akan terjadi kekacauan koordinasi antar devloper, hilangnya history perubahan, dan rusaknya stabilitas sistem yang sudah dianggap stabil.
+- Kelompok-1: karena baseline punya fungsi sebagai “ground truth” resmi yang jadi titik referensi terpercaya bagi seluruh tim. perubahan langsung bakal merusak integritas audit, memutus rantai traceability, dan berpotensi merusak pekerjaan anggota tim lain yang bergantung pada baseline yang sama. Selain itu, reproducibility build juga tidak bisa dijamin jika baseline bebas diubah
+- Kelompok-1: Baseline tidak boleh diubah secara langsung karena baseline merupakan versi item konfigurasi yang telah ditinjau dan disepakati secara resmi, yang berfungsi sebagai landasan atau titik awal (starting point) untuk tahapan pengembangan selanjutnya . Untuk menjaga integritas perangkat lunak, setiap perubahan pada baseline harus dilakukan melalui prosedur pengendalian perubahan (change control procedures) yang formal.
+- Kelompok-12: Di dunia SCM, baseline itu ibarat pondasi rumah atau titik checkpoint resmi yang udah disetujui bareng-bareng. Kalau aplikasinya udah mencapai tahap tertentu yang stabil dan fix, versi kodingan itu bakal dikunci dan dijadiin baseline. Nah, alasan paling utama kenapa kita nggak boleh ngotak-ngatik atau ngubah baseline ini secara langsung adalah demi menjaga kestabilan project. Kalau pondasinya diam-diam diubah tanpa sepengetahuan orang lain, semua fitur atau kodingan baru yang lagi dibangun di atas pondasi itu bisa ikut hancur atau berantakan karena pijakannya tiba-tiba beda.  Alasan kedua, ngubah baseline secara langsung bakal ngerusak fungsi "mesin waktu" atau sejarah kodingan kita. Baseline itu fungsinya sebagai patokan pasti buat ngebandingin versi yang lama sama versi yang baru. Kalau patokan awalnya aja diubah-ubah sesuka hati, kita bakal kehilangan jejak soal apa aja yang udah dikerjain, dan versi mana yang sebenernya udah disetujui aman. Ujung-ujungnya, kalau nanti ada error parah, kita nggak punya titik aman yang valid dan terpercaya buat ngelakuin undo.  Makanya, kalau emang harus ada perubahan di kode yang udah jadi baseline, aturannya nggak boleh asal timpa. Kita harus bikin "cabang" atau salinan baru dari baseline tersebut, ngelakuin perbaikan di salinan itu, dites lagi sampai bener-bener aman, baru deh minta persetujuan tim buat dijadiin baseline yang baru. Intinya, baseline itu kayak dokumen resmi yang udah dicap stempel; nggak boleh dicoret-coret pakai tipe-x sembarangan, tapi harus bikin dokumen revisi resmi kalau mau ada perubahan.
+- Kelompok-6: Baseline tidak boleh diubah langsung karena harus tetap stabil, dipercaya, dan bisa dilacak
+- Kelompok15: Baseline tidak boleh diubah secara langsung karena baseline adalah versi resmi yang menjadi acuan dari suatu proyek. Perubahan langsung dapat menyebabkan hilangnya kontrol versi, konflik antar tim, sulit tracking perubahan, dan menurunkan kualitas software. Perubahan harus melalui procedure change management yang akan menghasilkan baseline baru.
+- Kelompok-13: Karena baseline itu jadi titik acuan resmi dalam proyek. Kalau diubah sembarangan, bisa kehilangan patokan awal, akhirnya susah ngecek apakah suatu perubahan itu memang peningkatan, malah bikin error, atau berdampak ke bagian lain.
+- Kelompok-14: Baseline dalam manajemen proyek atau pengembangan perangkat lunak tidak boleh diubah secara langsung karena ia berfungsi sebagai patokan tetap yang digunakan untuk mengukur kinerja, kemajuan, dan keberhasilan suatu proyek. Jika baseline terus-menerus diubah secara informal, tim akan kehilangan kemampuan untuk melakukan perbandingan antara rencana awal dengan realisasi langsung di lapangan, yang mengakibatkan hilangnya kendali terhadap ruang lingkup, jadwal, dan biaya.
+- Kelompok11: Baseline merupakan reference point yang dipercayai untuk membandingkan perubahan atau mendeteksi anomali. Jika baseline diubah, maka kegunaan baseline sebagai reference point tersebut tidak akan berjalan karena sudah tidak akurat.
+- Kelompok-10: Baseline itu ibarat pondasi utama atau titik acuan stabil yang udah disepakati bareng sama tim dalam sebuah project software. Kenapa nggak boleh diubah secara langsung sesuka hati? Karena kalau setiap developer bisa bebas ngedit file intinya tanpa prosedur, project-nya pasti bakal kacau balau dan rawan error parah. Bayangin kalau kamu lagi ngoding fitur baru pakai patokan versi A, tapi tiba-tiba teman ngubah baseline-nya secara sepihak jadi versi B, otomatis kerjaan bakal bentrok dan susah di-merge. Selain itu, ngubah langsung tanpa lewat sistem kontrol (kayak pull request atau formal review) bikin kita kehilangan jejak history commit secara detail. Jadi kalau misal update terbarunya malah ngerusak sistem di production, kita bakal pusing nyari tahu siapa yang salah dan susah banget buat rollback ke versi lama yang masih jalan normal. Makanya, perubahan apa pun ke baseline harus lewat proses persetujuan dulu biar kode tetap konsisten dan aman buat semua orang di tim
+- Kelompok-4: Baseline tidak boleh diubah secara langsung karena baseline merupakan versi resmi yang sudah disetujui untuk menjadi acuan atau patokan utama bagi seluruh tim. Jika diubah sembarangan tanpa melalui prosedur yang jelas, tim akan kehilangan titik referensi yang konsisten, sehingga perubahan-perubahan selanjutnya menjadi berantakan dan sulit untuk dilacak, dibandingkan, maupun dikontrol.
+- Kelompok-7: Karena baseline berfungsi sebagai titik acuan yang sudah disepakati, sehingga jika diubah sembarangan maka acuan tersebut menjadi tidak lagi relevan. Akibatnya tim akan kesulitan dan berisiko menimbulkan inkonsistensi dalam proses pengembangannya. Jika adanya perubahan sebaiknya dilakukan saat proses pembuatan atau proses evaluasi baseline.
+- Kelompok-8: Karena baseline adalah titik acuan resmi dalam project. Jika diubah langsung tanpa kontrol, bisa menyebabkan inkonsistensi, konflik, dan sulit melacak perubahan. Perubahan pada baseline harus lewat change control process.
+
+----------------------
+
+Post by: adminkel2
+Content: Hi All, reply buat jawab ya. Kalau pakai akun selain yang udah kita buatin, tolong cantumin nomer kelompoknya. Thank you dan good luck
+Replies:
+- Kelompok-5: oke
+- Kelompok-12: sipp
+- Kelompok-1: ok
+- Kelompok-14: ok
+- Kelompok-7: Siap
+- Kelompok-13: Ok
+- Kelompok11: Yessirrrr
+- Kelompok-3: kelompok 3 hadir
+
+----------------------
+
+Post by: weneville
+Content: Apa perbedaan dari version control, issue tracking, dan build tool dalam konteks scm?
+Replies:
+- Kelompok-14: Version Control Mengelola perubahan kode dari waktu ke waktu (siapa ubah apa, kapan, bisa rollback). Contoh: Git Issue Tracking Mencatat dan mengelola tugas/bug/fitur yang harus dikerjakan dalam proyek. Contoh: Jira Build Tool Mengotomatisasi proses build (compile, test, packaging aplikasi). Contoh: Maven
+- Kelompok-1: Version Control berfokus pada mengelola berbagai versi dan varian dari item konfigurasi, seperti kode program dan dokumen . Fungsi utamanya adalah melacak riwayat perubahan kode dari waktu ke waktu untuk menjaga integritas perangkat lunak . Issue Tracking berfungsi untuk melacak dan mengelola masalah, bug, serta permintaan penambahan fitur (enhancement requests) yang dilaporkan . Alat seperti Jira atau Bugzilla memberikan pelacakan secara terpusat, notifikasi penugasan, hingga data analitik terkait isu proyek . Build Tools bertujuan untuk mengotomatisasi proses kompilasi source code menjadi program yang siap dijalankan (dieksekusi) . Penggunaan alat seperti Gradle, Maven, atau Make memastikan konsistensi perangkat lunak di berbagai lingkungan, mengurangi risiko kesalahan manusia (human error), dan sangat penting dalam mendukung integrasi berkelanjutan (Continuous Integration) .
+- Kelompok-6: Version control menyimpan perubahan kode, Issue tracking mencatat tiap task yang harus dikerjakan, Build tool adalah tool untuk merakit software
+- Kelompok-12: Perbedaan ketiganya itu gampang banget dibedain dari fungsinya pas kita lagi ngerjain project. Pertama, Version Control itu fokusnya murni ngurusin file kodingan. Dia ibarat mesin waktu yang nyatet semua perubahan kode dan ngasih fitur undo kalau tiba-tiba aplikasinya error. Jadi urusannya bener-bener cuma seputar histori dan keamanan kode yang lagi diketik.  Kedua, Issue Tracking. Kalau yang ini nggak nyentuh kodingan sama sekali. Fungsinya lebih kayak papan to-do list buat ngatur tugas, jadwal, dan nyatet laporan bug yang harus dibenerin. Alat ini dipakai buat nentuin siapa ngerjain fitur apa biar anggota kelompok nggak kebingungan dan nggak ngerjain bagian yang tumpang tindih. Fokusnya murni buat ngurusin tugas dan manajemen kerjaan.  Ketiga, Build Tool. Kodingan mentah yang udah selesai diketik itu kan sebenernya nggak bisa langsung di-klik dan jalan gitu aja. Kodenya harus di-"masak", digabungin, dan diproses dulu biar jadi satu aplikasi utuh yang siap dipakai. Nah, Build Tool inilah yang otomatis ngerjain proses itu, jadi tugas utamanya adalah ngubah barisan kode mentah jadi aplikasi yang beneran jadi.  Singkatnya, alur kerjanya itu saling nyambung. Kita bagi-bagi tugas lewat Issue Tracking, lalu mulai ngetik kode dan nyimpen perubahannya dengan aman pakai Version Control, dan terakhir kodenya diolah jadi aplikasi siap pakai menggunakan Build Tool.
+- Kelompok-5: Version Control (contohnya Git) dipakai buat ngatur source code, nyatet setiap perubahan, ngelola branch, merge code, dan memungkinkan rollback kalau ada error. Fungsinya buat menjaga codebase tetap rapi dan stabil. Issue Tracking (seperti Jira atau GitHub Issues) fokus ke pencatatan task, bug, atau request fitur dalam bentuk ticket. Sistem ini membantu tim tahu apa yang harus dikerjakan dan alasan perubahan kode dilakukan. Build Tool (misalnya Apache Maven atau Webpack) bertugas meng-compile code, mengatur dependency, menjalankan testing, lalu mengubah source code jadi software yang siap dijalankan.
+- Kelompok11: Dalam konteks SCM, version control, issue tracking, dan build tool punya peran yang berbeda tapi saling melengkapi. Version control digunakan untuk mengelola perubahan pada source code, seperti menyimpan history, melakukan branching, dan menggabungkan code dari beberapa developer. Issue tracking berfungsi untuk mengatur pekerjaan tim, seperti mencatat bug, fitur yang harus dibuat, dan memantau progress pengerjaan. Sementara itu, build tool digunakan untuk mengubah code menjadi aplikasi yang bisa dijalankan, termasuk proses compile, mengatur dependency, dan menjalankan testing. Jadi, secara sederhana, version control fokus ke code, issue tracking ke manajemen tugas, dan build tool ke proses pembuatan aplikasinya.
+- Kelompok-10: Version Control itu fokusnya murni ke pelacakan source code, contohnya kayak Git. Tool ini nyimpen semua history perubahan file (commit), jadi kalau kode yang baru di-upload ternyata malah bikin sistem error, kita bisa langsung rollback ke versi lama yang masih aman. Nah, kalau Issue Tracking itu bukan buat nyimpen kode, tapi buat manajemen tugas dan nge-track bug, contohnya Jira atau Trello. Di sini kita bisa nyatat fitur apa yang mau dibikin, error apa yang harus di-patch, dan siapa dari anggota tim yang lagi ditugasin ngerjain bagian tersebut. Terakhir, Build Tool itu fungsinya murni buat otomatisasi. Daripada kita ribet compile kode, masukin dependencies, dan jalanin testing secara manual satu-satu lewat terminal, tool kayak Maven atau Make bakal otomatis ngerakit source code mentah kita jadi aplikasi atau file eksekusi yang siap dipakai
+- Kelompok15: Version Control System berfungsi untuk mengelola perubahan source code dari waktu ke waktu. VCS mencatat revisi, memungkinkan kolaborasi antar pengembang, dan menyediakan fitur rollback. Berbeda dari VCS, Issue Tracking berfungsi untuk mengelola daftar tugas, bug, dan permintaan fitur baru. Ini adalah sistem manajemen proyek yang memastikan setiap masalah terdokumentasi dan memiliki penanggung jawab. Terakhir Build Tool berfungsi untuk Mengotomatiskan proses pengubahan source code menjadi artefak yang executable. Bertugas untuk mengcompile code, test running automation, dan mengcompile code menjadi format seperti .jar atau .exe.
+- Kelompok-4: Version Control Berfungsi melacak riwayat perubahan software dari waktu ke waktu untuk memudahkan debugging dan memungkinkan rollback ke versi sebelumnya. Issue Tracking Berfungsi mengelola dan melacak semua laporan masalah, bug, serta permintaan fitur baru dalam satu sistem terpusat. Build Tools Berfungsi mengotomatisasi proses kompilasi source code menjadi program yang dapat dijalankan secara konsisten, cepat, dan bebas dari human error.
+- Kelompok-13: Kalau Version Control itu tempat buat letakin kode (misalnya Github), Issue Tracking itu daftar "to do list" atau bug yang harus diberesin(kayak jira/trello), sedangkan Build Tool itu yang tugasnya ngerakit kode kita jadi aplikasi yang siap jalan (kayak maven atau npm).
+- Kelompok-7: Version control: menunjukkan perubahan yang dialami dalam sistem yang memudahkan debugging, rollback, dll. Issue tracking: melacak semua masalah dan mencatatnya dalam satu sistem yang bisa dilihat tim. build tool: automatisasi proses komplikasi source code jadi satu program yang dapat dieksekusi yang membuat proses build menjadi konsisten, cepat, dan bebas dari human error
+- Kelompok-8: Version Control digunakan untuk mengelola perubahan source code, contohnya Git. Issue Tracking digunakan untuk mencatat dan memantau bug, task, atau feature request, contohnya Jira. Build Tool digunakan untuk otomatisasi compile, testing, dan packaging software, contohnya Maven atau Gradle. Ketiganya mendukung SCM dari sisi kontrol code, manajemen pekerjaan, dan proses build.
+
+----------------------
+
+Post by: weneville
+Content: Apa tujuan utama dari Software Configuration Management dalam pengembangan software?
+Replies:
+- Kelompok-5: menjamin integritas software sepanjang hidup pengembangannya. SCM bertindak sebagai sistem kontrol yang mengelola perubahan, melacak versi, dan memastikan pengerjaan ada di code yang Benar.
+- Kelompok-12: Tujuan utama dari Software Configuration Management (SCM) itu sebenernya buat ngontrol semua perubahan yang terjadi selama kita bikin software, biar project-nya nggak berantakan atau chaos. Kan kalau lagi ngoding apalagi bareng-bareng, pasti banyak banget tuh file yang diubah, ditambah, atau malah ga sengaja kehapus.  Nah, SCM ini ibaratnya kayak buku catetan atau mesin waktu buat kodingan kita. Dia bakal nyatet siapa aja yang ngubah kode, bagian mana yang diubah, dan kapan diubahnya. Jadi kalau tiba-tiba ada bug atau error parah, kita nggak perlu panik karena bisa gampang di-undo atau balik ke versi kodingan sebelumnya yang masih aman.  Selain itu, SCM juga ngebantu banget biar kerjaan kita nggak saling timpa satu sama lain pas lagi ngerjain project bareng tim. Intinya, SCM mastiin proses development tetep rapi, aman, dan ke-track dengan jelas dari awal sampai aplikasinya beneran jadi.
+- Kelompok-7: - Mengontrol perubahan dalam software
+- Kelompok-6: Mengelola dan mengontrol perubahan pada software agar tetap teratur dan bisa diandalkan
+- Kelompok-10: Tujuan utama dari Software Configuration Management (SCM) dalam Software Engineering itu simpelnya buat ngelacak dan ngendaliin setiap perubahan kode atau aset selama project berjalan.  Bayangin kalau di tim developer ada banyak orang yang ngoding di file yang sama secara barengan, pasti bakal bentrok dan error semua kalau nggak ada sistem yang ngatur. Nah, SCM ini berfungsi mastiin semua perubahan itu tercatat rapi di sebuah history, jadi kita tahu pasti siapa yang ngubah, apa yang diubah, dan kapan diubah. Konsepnya sama kayak pas kita pakai Git, kalau misal ada update terbaru yang rilis tapi malah ngerusak sistem di production, kita bisa dengan gampang rollback ke versi commit lama yang masih stabil. Intinya, SCM dipakai buat menjaga konsistensi software dan bikin kolaborasi tim tetap aman tanpa takut source code aslinya berantakan atau tertimpa kerjaan orang lain
+- Kelompok-13: Kelompok 13 • Mengontrol perubahan dalam software • Mendukung kolaborasi tim • Menjaga kualitas software • Menyediakan traceability perubahan
+- Kelompok-7: Mendukung kolaborasi tim, menjaga kualitas software, menyediakan traceability perubahan
+- Kelompok-14: Dalam pengembangan perangkat lunak, SCM berperan untuk mengontrol setiap perubahan yang terjadi pada software agar tetap terstruktur dan terdokumentasi dengan baik. Selain itu, SCM juga mendukung kolaborasi tim dengan memungkinkan banyak developer bekerja secara bersamaan tanpa konflik yang tidak terkelola. Dengan proses yang teratur, kualitas software dapat lebih terjaga karena setiap perubahan dapat diuji dan divalidasi. Tidak kalah penting, SCM menyediakan traceability, yaitu kemampuan untuk melacak riwayat perubahan secara jelas sehingga memudahkan identifikasi masalah maupun audit di kemudian hari.
+- Kelompok15: SCM bertujuan untuk meminimalkan risiko kesalahan, meningkatkan produktivitas tim, dan memastikan kualitas perangkat lunak tetap terjaga meskipun terjadi banyak perubahan selama proses developnya. Contohnya kaya versioning,DLL
+- Kelompok11: Tujuan utama dari Software Configuration Management (SCM) adalah untuk mengatur dan mengontrol semua perubahan yang terjadi dalam pengembangan software supaya tetap rapi, konsisten, dan bisa dilacak. Dengan SCM, setiap perubahan pada code akan tercatat dengan jelas siapa yang mengubah, kapan diubah, dan apa yang diubah, sehingga memudahkan kolaborasi dalam tim dan mengurangi risiko error atau konflik. Selain itu, SCM juga membantu memastikan bahwa setiap versi software bisa dikelola dengan baik, termasuk jika suatu saat perlu kembali ke versi sebelumnya yang lebih stabil.
+- Kelompok-4: Software Configuration Management (SCM) bertujuan utama untuk mengendalikan dan melacak semua perubahan pada perangkat lunak guna memastikan integritas sistem sepanjang siklus pengembangannya. Praktik ini sangat esensial karena dapat mencegah munculnya error dari perubahan yang tidak terkelola, sekaligus memfasilitasi kelancaran kolaborasi bagi tim developer yang bekerja bersamaan. Selain itu, SCM berfungsi untuk menjaga kualitas perangkat lunak secara konsisten dan mendokumentasikan jejak audit (audit trail) untuk keperluan pelacakan serta kepatuhan terhadap regulasi industri.
+- Kelompok-8: mengelola perubahan pada software secara terkontrol agar development lebih terorganisir, konsisten, dan minim error. SCM membantu tracking perubahan kode, menjaga integritas project.
+
+----------------------
+
+
+padlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Post by: rizzky                                                                                                         Content: Menurut kalian, apakah SCM masih relevan di era Agile dan DevOps yang serba cepat?                             Replies:                                                                                                                - Kelompok-5: SCM tetap sangat relevan karena menjadi fondasi otomatisasi dalam CI/CD dan DevOps yang memungkinkan tim bekerja cepat dengan risiko minimal, memastikan setiap perubahan kode tetap terlacak, aman, dan dapat dipulihkan kapan saja                                                                                                                      - Kelompok-12: justru SCM itu makin relevan banget, bahkan udah jadi "nyawa" utamanya Agile sama DevOps. Tanpa SCM, cara kerja yang serba cepet itu malah nggak bakal bisa jalan sama sekali dan jatuhnya bakal jadi bencana.  Bayangin gini, Agile dan DevOps itu ibarat kita bawa mobil balap yang ngebut banget karena tim dituntut buat terus-terusan bikin fitur baru dan rilis update dengan cepet. Nah, SCM ini ibarat kemudi dan remnya. Kalau kita ngebut ngerjain kodingan bareng-bareng tapi nggak ada sistem yang ngatur historinya, nyimpen baseline, atau ngecegah kode biar nggak saling tabrakan, project-nya udah pasti langsung hancur berantakan di tengah jalan.  Terus, di dunia DevOps itu kan semuanya serba otomatis. Misalnya, pas kodingan beres, sistem bakal otomatis nge-tes dan nge-rilis aplikasinya. Nah, sistem otomatis ini dapet file kodingan yang bener dan aman dari mana? Ya ngambilnya dari SCM. Jadi, SCM justru jadi fondasi paling wajib biar tim bisa kerja super ngebut tapi project-nya tetep rapi, stabil, dan aman dari error.                                          - Kelompok11: SCM justru menjadi tulang punggung otomatisasi modern, karena tanpa version management yang teratur, alur kerja CI/CD tidak akan memiliki database yang konsisten untuk menjalankan pengujian dan penyebaran aplikasi secara otomatis dan cepat.                                                                                                          - Kelompok15: Masih, karena SCM bisa dibilang fondasi buat Agile. Kaya  CI/CD kalo ga ada SCM yang proper nati CI/CDnya bakal banyak masalah. Selain itu SCM bisa digunakan untuk baselining agar pengembangan yang cepat itu ga berbenturan. Kesimpulannya tetep masih kepake tapi dengan sedikit perubahan dan juga adaptasi                                          - Kelompok-7: SCM tetap sangat relevan, hanya saja bentuknya telah nerubah dari proses yang kaku menjadi lebih otomatis dengan tools yang mendukung seperti GitHub dan pipeline seperti Jenkins, sehingga meskipun pengembangan berjalan cepat, setiap perubahan tetap dapat dilacak, dikontrol, dan dikembalikan jika terjadi kesalahan.                               - Kelompok-6: SCM tidak tergantikan. Justru di era yang serba cepat, SCM adalah yang membuat kecepatan tetap terarah, aman, dan bisa dipercaya.                                                                                                 - Kelompok-14: SCM justru menjadi semakin krusial dalam era Agile dan DevOps karena bertindak sebagai fondasi utama yang memungkinkan otomatisasi dan kolaborasi paralel dalam ritme kerja yang cepat. Tanpa SCM, siklus CI/CD tidak akan bisa berjalan karena sistem tidak memiliki pemicu otomatis untuk melakukan pengujian maupun penyebaran kode setiap kali ada perubahan. Selain itu, fitur branching dalam SCM memungkinkan tim Agile untuk mengembangkan berbagai fitur secara bersamaan tanpa saling mengganggu, sekaligus memberikan jaring pengaman berupa kemampuan rollback instan jika iterasi cepat tersebut menyebabkan kegagalan sistem.                                                                                      - Kelompok 15:  Masih relevan. SCM merupakan fondasi yang memastikan kecepatan dalam Agile dan DevOps tanpa merusak kualitas sistem.  1. SCM memastikan integritas dan keterlacak software sepanjang siklus hidup pengembangan.  2. SCM memfasilitasi koordinasi antar developer yang bekerja pada basis kode yang sama agar tetap terorganisir dan konsisten.          - Kelompok-1: Agile and DevOps encourage fast and frequent changes, but that also means teams need stronger control over code, versions, etc. SCM helps make sure every change is tracked and reviewed. Also, can be rolled back if something goes wrong. Without SCM, rapid development could become risky and messy because teams might lose track of what changed, who changed it, or which version is running in production.                                                                - Kelompok-13: Masih sangat relevan, bahkan bisa jadi fondasi. Tanpa SCM yang rapi, kita nggak bakal bisa punya CI/CD (yang otomasi rilis). Agile itu geraknya cepat, dan SCM itu yang mastiin kecepatan itu tetap aman dan terkontrol.         - Kelompok-8: Sangat relevan dan lebih penting. Agile dan DevOps butuh perubahan cepat dan frequent release, sehingga SCM membantu menjaga kontrol versi, automasi, kolaborasi, dan stabilitas di tengah perubahan yang cepat.                  - Kelompok-4: SCM sangat relevan dan justru menjadi pondasi utama di era Agile dan DevOps. Praktik SCM modern sangat mendukung pergerakan rilis yang serba cepat melalui Integrasi CI/CD, Proses SCM harus terintegrasi secara mulus dengan pipeline CI/CD agar pengembangan tidak menjadi lambat dan terhindar dari celah. Otomatisasi, Tugas-tugas yang berulang dapat bekerja secara otomatis untuk membebaskan developer dan mengurangi human error.  Menjaga Kualitas, Kecepatan kerja selalu diimbangi dengan penerapan peer code review serta pengujian (testing) otomatis di setiap tahap agar bug dapat ditemukan lebih awal.                                                                                                          - Kelompok-10: Masih relevan. Kenapa? Di era Agile dan DevOps, siklus update software itu serba cepat dan kodenya diubah terus-menerus sama banyak developer. Nah, DevOps itu kan sangat bergantung sama otomatisasi kayak CI/CD (Continuous Integration/Continuous Deployment).  Pipeline otomatis ini butuh satu sumber utama yang nyimpen versi kode paling stabil. Tanpa SCM kayak Git, mustahil kita bisa ngelakuin testing atau deploy otomatis karena sistem nggak tahu history kodenya dan versi mana yang mau ditarik. Bayangin aja kalau tim dipaksa rilis cepat tapi nggak ada yang ngelacak siapa yang ngubah file atau nggak ada opsi buat rollback pas tiba-tiba kodenya bikin server down. Rilisnya emang cepat, tapi hancurnya juga cepat.                                                                                                                                                                                                                                      ----------------------                                                                                                                                                                                                                          Post by: weneville                                                                                                      Content: Berikan contoh kasus yang mencerminkan pentingnya SCM                                                          Replies:                                                                                                                - Kelompok-12: Bayangin deh lagi kerkel H-1 sebelum deadline, aplikasinya sebenernya udah jalan lancar. Tapi malemnya, pas lagi lembur sambil minum espresso, Jovan iseng nambahin fitur baru di kodingan utama tanpa bilang-bilang. Besok paginya pas project-nya mau di-run, tiba-tiba malah error total.  Karena kalian nggak pakai SCM, nggak ada yang tau pasti baris kode mana aja yang diotak-atik sama Jovan semalem. Akhirnya, kalian terpaksa panik dan ngebongkar kodingannya satu-satu secara manual buat nyari bug-nya. Parahnya lagi, kalian nggak punya file backup versi kodingan kemarin yang masih bener, jadi pilihannya cuma ngabisin waktu berjam-jam buat benerin atau ngulang dari awal.  Nah, coba bandingin kalau kalian pakai SCM. SCM bakal nyatet dengan jelas histori perubahan yang dilakuin Jovan, lengkap jam berapa dan di baris mana aja. Jadi pas sadar aplikasinya rusak, kamu tinggal pencet undo atau revert buat balikin project-nya ke versi kemarin yang masih aman.                                                                                                           - Kelompok11: SCM berfungsi sebagai pelindung integrity kode yang mencegah data tertimpa secara tidak sengaja dan menyediakan opsi rollback untuk memulihkan sistem dengan cepat jika terjadi error saat kolaborasi tim.                        - Kelompok-14: Misalnya ketika dua developer mengerjakan fitur berbeda pada file yang sama, misalnya fitur "Promo" dan fitur "Pembayaran". Tanpa SCM, developer yang terakhir menyimpan file akan menghapus logika fitur yang dikerjakan oleh developer pertama tanpa ada peringatan sistem. Akibatnya, saat aplikasi launch, salah satu fitur akan hilang sepenuhnya atau menyebabkan sistem crash, memaksa tim untuk menulis ulang kode secara manual dan membuang waktu hanya untuk mencari tau bagian mana yang hilang atau rusak.                                                                                  - Kelompok-1: A company releases a mobile app update, but users start reporting crashes. Because the team uses SCM, they can quickly check which code changes, library versions, and configuration files were included in that release. They identify the faulty change, roll back to the previous stable version, and eventually release a fix. SCM allowed helped the team track changes, find the problem faster and recover faster.                                                         - Kelompok-6: Bayangkan sebuah tim sedang mengembangkan aplikasi e-wallet dengan deadline yang ketat, di mana setiap developer bekerja cepat menambahkan fitur dan memperbaiki bug, tetapi tanpa menggunakan Software Configuration Management (SCM). Mereka saling bertukar file secara manual tanpa pencatatan yang jelas, sehingga ketika aplikasi dirilis dan tiba-tiba muncul bug serius seperti login error dan fitur yang tidak berjalan, tidak ada satu pun yang tahu perubahan mana yang menjadi penyebabnya. Situasi ini berubah menjadi kekacauan karena tim harus menelusuri kode satu per satu tanpa arah yang pasti. Namun, jika SCM digunakan, setiap perubahan akan tercatat rapi melalui version control, lengkap dengan siapa yang mengubah, kapan, dan untuk tujuan apa, sehingga ketika bug muncul, tim dapat dengan cepat melacak sumber masalah atau bahkan melakukan rollback ke versi sebelumnya yang stabil. Dengan begitu, waktu penanganan yang semula bisa memakan berjam-jam atau bahkan hari dapat dipangkas menjadi jauh lebih singkat, sekaligus menjaga stabilitas dan kepercayaan pengguna terhadap aplikasi.                                                                                                 - Kelompok-5: Misalnya, beberapa developer mengerjakan fitur checkout secara bersamaan. Tanpa Version Control seperti Git, perubahan kode bisa bentrok atau tertimpa. Kalau muncul bug, tanpa Issue Tracking seperti Jira, tim akan sulit melacak sumber masalah. Tanpa Build Tool seperti Apache Maven, aplikasi juga bisa jalan di komputer developer tapi error saat di server.                                                                                                              - Kelompok-7: Bayangkan sebuah tim developer sedang mengerjakan aplikasi dan semuanya berjalan lancar menjelang deadline, lalu salah satu anggota tim melakukan perubahan pada kode utama tanpa memberi tahu yang lain, dan keesokan harinya aplikasi tiba-tiba error sehingga tidak bisa dijalankan; karena tim tidak menggunakan SCM, mereka tidak memiliki riwayat perubahan sehingga tidak tahu bagian mana yang menyebabkan masalah, tidak bisa melacak siapa yang mengubah kode tersebut, dan tidak memiliki cadangan versi sebelumnya yang masih stabil, akibatnya mereka harus memeriksa kode satu per satu secara manual yang memakan waktu lama bahkan berisiko mengulang pekerjaan dari awal, sedangkan jika menggunakan SCM seperti Git melalui platform seperti GitHub, setiap perubahan akan tercatat dengan jelas sehingga tim dapat dengan cepat menemukan sumber error dan mengembalikan kode ke versi sebelumnya (rollback) tanpa mengganggu progres proyek secara keseluruhan.                                                                                                                       - Kelompok15: Sebuah tim pengembang sedang mengerjakan pembaruan aplikasi e-commerce. Developer A memperbaiki bug di sistem pembayaran, sementara Developer B menambahkan fitur diskon baru. Keduanya mengubah file yang sama secara bersamaan tanpa SCM yang ketat.  Tanpa SCM, developer B dapat menimpa perubahan yang dibuat oleh developer A saat mengunggah code ke server.                                                                                                               - Kelompok-13: Misalnya tim lagi ngerjain fitur baru selama seminggu, eh ternyata pas mau dirilis kodenya malah bikin sistem crash total. Berkat SCM, kita tinggal pencet tombol "Rollback" buat balikin aplikasi ke kondisi stabil kemarin dalam hitungan detik, tanpa harus pusing benerin manual satu satu.                                                          - Kelompok-8: Contohnya dua developer mengedit file yang sama tanpa version control, lalu salah satu perubahan tertimpa. Dengan SCM seperti Git, perubahan bisa di-merge, konflik bisa diselesaikan, dan history perubahan tetap tercatat.      - Kelompok-4: Developer A baru saja menyelesaikan perbaikan untuk sebuah celah security yang kritis pada sistem. Di hari yang sama, Developer B sedang mengerjakan penambahan fitur profil pengguna dan bekerja secara bersamaan pada basis kode yang sama. Karena tidak ada kontrol versi dan manajemen perubahan, Developer B langsung menyimpan kodenya, yang tanpa sengaja menimpa dan menghapus perbaikan security dari Developer A. Ini adalah contoh nyata di mana tanpa kontrol perubahan yang baik, satu perubahan kecil bisa merusak fitur lain yang sudah berjalan.   Saat aplikasi dirilis dan celah tersebut akhirnya dimanfaatkan oleh pihak luar, tim kebingungan saat melakukan investigasi karena mereka tidak memiliki jejak audit (audit trail) atas perubahan yang terjadi.                                                                         - Kelompok-10: Di tim itu, si A dan si B kebetulan ditugasin ngedit file yang sama, misalnya file payment.php. Si A udah selesai benerin bug di fitur transfer bank, terus dia save dan upload file-nya. Tapi di waktu yang sama, si B ternyata juga lagi ngoding fitur e-wallet di file yang sama dan langsung numpuk file yang baru aja di-upload si A. Hasilnya? Kodingan perbaikan bug milik si A hilang total tertimpa kerjaan si B. Kalau mereka nggak pakai SCM, mereka pasti bakal pusing nyari tahu kapan dan kenapa kodenya hilang, ujung-ujungnya terpaksa ngoding ulang dari awal.                                                                                                                                                  ----------------------                                                                                                                                                                                                                          Post by: weneville                                                                                                      Content: Kapan waktu paling tepat untuk membuat baseline dalam project?                                                 Replies:                                                                                                                - Kelompok-5: Baseline dibuat setiap kali sebuah fase pengembangan atau fitur penting telah selesai diuji, disetujui secara resmi, dan dinyatakan stabil agar bisa digunakan sebagai titik acuan yang aman sebelum masuk ke step berikutnya     - Kelompok-14: Waktu yang tepat untuk membuat baseline dalam project adalah saat suatu bagian pekerjaan sudah stabil dan disepakati sebagai acuan. Baseline dibuat ketika kondisi project sudah cukup matang sehingga bisa dijadikan patokan tetap untuk perkembangan selanjutnya                                                                                       - Kelompok-1: Waktu yang tepat untuk membuat baseline adalah ketika software sudah melalui proses review, dan sudah disetejui oleh Tim untuk menjadikan versi tersebut sebagai acuan referensi (baseline).                                      - Kelompok-12: Waktu paling tepat buat bikin baseline itu pas project kamu udah nyentuh titik pencapaian penting alias milestone, atau pas satu tahap kerjaan udah bener-bener beres dan disetujui bareng-bareng. Misalnya, pas semua fitur utama udah selesai dikoding, udah dites jalan lancar, dan dipastiin nggak ada error yang parah. Nah, di momen yang lagi aman dan stabil inilah kodingannya "dikunci" dan dijadiin baseline.  Selain itu, baseline juga wajib banget dibikin tepat sebelum aplikasinya dirilis ke pengguna atau sebelum masuk ke fase development yang baru. Tujuannya biar kalau nanti pas lagi nambahin fitur baru kodingannya malah hancur, atau aplikasinya tiba-tiba bermasalah pas dipakai, kita punya patokan versi stabil yang jelas buat ngebenerinnya. Intinya, baseline dibikin tiap kali tim sepakat kalau versi kodingan saat itu udah mantap, jadi disimpan sebagai patokan resmi sebelum lanjut ngotak-ngatik hal lain yang berisiko.                 - Kelompok-7: Waktu paling tepat untuk membuat baseline dalam sebuah project adalah pada momen ketika suatu bagian pekerjaan sudah mencapai kondisi stabil, disetujui, dan siap dijadikan acuan, misalnya setelah kebutuhan sistem (requirement) selesai dan divalidasi, setelah desain disepakati, atau setelah sebuah fitur atau versi aplikasi telah lolos testing dan siap dirilis; baseline tidak dibuat sembarangan di tengah perubahan yang masih sering terjadi, karena tujuannya adalah menjadi titik referensi yang jelas untuk membandingkan perubahan di masa depan, sehingga dalam praktik modern yang mengadopsi Agile dan DevOps, baseline biasanya dibuat lebih sering tetapi dalam lingkup kecil, seperti saat setiap sprint selesai atau ketika akan melakukan rilis versi tertentu, agar tim tetap bisa bergerak cepat tanpa kehilangan kontrol terhadap versi yang sudah dianggap stabil.                                                                                   - Kelompok15: Waktu paling tepat untuk membuat baseline adalah pada milestone penting dari suatu proyek, yaitu setelah selesainya dokumen, desain, modul, atau versi software, terus direview, disetujui, dan cukup stabil untuk dijadikan acuan resmi bagi tahap berikutnya.                                                                                           - Kelompok-6: Baseline dibuat saat proyek sudah stabil dan siap dijadikan acuan, biasanya setelah tahap penting selesai dan lolos testing atau sebelum rilis. Intinya, saat versi tersebut cukup matang untuk dijadikan patokan.                - Kelompok-13: Pas kita udah nyampe milestone penting. Contohnya pas akhir sebuah sprint, setelah selesai testing yang clean, atau tepat sebelum aplikasi mau di deploy buat produksi.                                                          - Kelompok-4: Waktu paling tepat untuk membuat baseline adalah setelah sebuah versi software atau dokumen selesai di-review dan resmi disetujui. Pada titik inilah hasil kerja dikunci menjadi acuan utama bagi tim, sehingga tidak bisa lagi diubah sembarangan tanpa melewati prosedur change control yang jelas.                                                     - Kelompok-8: Biasanya dibuat saat milestone penting, misalnya setelah requirement disetujui, desain selesai, atau sebelum release/testing besar. Intinya saat ada versi yang cukup stabil untuk dijadikan acuan.                               - Kelompok-10: Waktu paling tepat buat bikin baseline itu pas kita udah nyelesaiin sebuah milestone penting dalam project dan hasil kerjanya udah di-review serta disetujui bareng-bareng sama tim. Contohnya, pas fase pengumpulan requirements udah final, atau pas desain arsitektur udah fix sebelum kita mulai ngetik kode                                         - Kelompok11: Baseline dalam project paling tepat dibuat pada setiap tahap penting ketika suatu deliverable sudah cukup stabil dan telah disetujui oleh stakeholder, seperti setelah requirement selesai, desain sistem ditetapkan, hasil development sudah stabil, dan sebelum proses release. Tujuannya adalah agar setiap perubahan setelah titik tersebut bisa dikontrol dengan jelas, sehingga memudahkan tracking, pengelolaan versi, serta menghindari perubahan yang tidak terstruktur selama proses pengembangan.                                                                                                                                                                                                                      ----------------------                                                                                                                                                                                                                          Post by: weneville                                                                                                      Content: Apa yang terjadi ketika tim development tidak menggunakan SCM sama sekali?                                     Replies:                                                                                                                - Kelompok-12: Kalau tim development nggak pakai SCM sama sekali, hal pertama yang bakal kejadian adalah chaos waktu gabungin kodingan. Bayangin aja, kalau kita lagi ngerjain satu file yang sama bareng temen, terus pas mau disatuin malah kodingan kita ketimpa sama kodingan mereka. Akhirnya, ada baris kode yang hilang atau malah harus ngetik ulang dari awal karena nggak ada sistem otomatis yang ngatur bentrok atau conflict antar kode.  Terus, masalah fatal lainnya adalah kita nggak punya fitur undo kalau tiba-tiba project-nya error. Pas lagi asik ngoding terus tiba-tiba aplikasinya crash parah, kita bakal susah banget buat ngelacak siapa yang terakhir ngubah dan bagian mana yang bikin rusak. Mau nggak mau harus ngecek kode secara manual satu-satu, dan kita nggak bisa dengan gampang balik ke versi kodingan kemarin yang masih jalan normal.  Terakhir, proses kolaborasi bakal jadi super manual dan rawan banget kehilangan data. Tim yang nggak pakai SCM biasanya bakal oper-operan file source code lewat flashdisk, WhatsApp, atau Google Drive pakai nama file kayak "Project_Final", "Project_Final_Beneran", sampai "Project_Revisi_Fix_Banget". Selain bikin pusing nentuin mana versi yang paling update, kalau sewaktu-waktu laptop salah satu anggota tim rusak, kodingan yang ada di dalemnya bisa ikut lenyap tanpa sisa.                                                                                                                    - Kelompok-14: Tanpa SCM, tim pengembangan akan terjebak dalam kekacauan kolaborasi karena tidak adanya sistem yang mengatur sinkronisasi kode antar pengembang. Risiko terbesar adalah terjadinya overwriting, di mana pekerjaan satu anggota tim tertimpa oleh anggota lain secara tidak sengaja saat menyimpan file di folder bersama. Selain itu, tim kehilangan kemampuan untuk melakukan rollback ke versi sebelumnya jika terjadi error fatal, serta tidak memiliki rekam jejak tentang siapa yang mengubah baris kode tertentu dan apa alasannya.                                                               - Kelompok-5: Kalau tim development sama sekali tidak memakai Software Configuration Management (SCM), proses pembuatan software bisa jadi berantakan dan rawan error. Tanpa Version Control seperti Git, developer biasanya harus tukar file secara manual, yang berisiko bikin kode tertimpa atau hilang. Kalau ada kesalahan besar, tim juga sulit melakukan rollback ke versi yang sebelumnya stabil karena tidak ada riwayat perubahan yang jelas. Selain itu, tanpa SCM, proses tracking juga jadi susah. Saat muncul bug, tim akan kesulitan mencari bagian kode yang bermasalah, siapa yang mengubahnya, dan kenapa perubahan itu dibuat. Ditambah lagi, tanpa Build Tool seperti Apache Maven, sering muncul masalah "works on my machine", jalan di komputer developer, tapi error saat dijalankan di server karena dependency dan konfigurasi tidak seragam. - Kelompok-5: Kalau tim development sama sekali tidak memakai Software Configuration Management (SCM), proses pembuatan software bisa jadi berantakan dan rawan error. Tanpa Version Control seperti Git, developer biasanya harus tukar file secara manual, yang berisiko bikin kode tertimpa atau hilang. Kalau ada kesalahan besar, tim juga sulit melakukan rollback ke versi yang sebelumnya stabil karena tidak ada riwayat perubahan yang jelas. Selain itu, tanpa SCM, proses tracking juga jadi susah. Saat muncul bug, tim akan kesulitan mencari bagian kode yang bermasalah, siapa yang mengubahnya, dan kenapa perubahan itu dibuat. Ditambah lagi, tanpa Build Tool seperti Apache Maven, sering muncul masalah "works on my machine", jalan di komputer developer, tapi error saat dijalankan di server karena dependency dan konfigurasi tidak seragam. - Kelompok15: Jika suatu tim development tidak menggunakan SCM, proyek bisa mengalami kekacauan versi, konflik antar developer, sulit melacak perubahan, tidak bisa rollback dengan mudah, testing tidak akan konsisten, dan risk kegagalan release meningkat.                                                                                                          - Kelompok-7: Tanpa SCM, tim development akan kesulitan mengontrol perubahan karena tidak ada pencatatan versi, sehingga tidak tahu siapa mengubah apa dan kapan, yang berujung pada konflik kode, bug sulit dilacak, dan tidak bisa rollback saat terjadi error; tanpa tools seperti Git atau GitHub, kolaborasi jadi tidak efisien, perubahan bisa saling menimpa, dan tim berisiko harus memperbaiki manual atau bahkan mengulang pekerjaan dari awal.                                       - Kelompok-6: Kalau tim developer tidak memakai SCM sama sekali, proyek mereka mudah jadi kacau karena tidak ada kontrol versi, tidak ada catatan perubahan, dan tidak ada koordinasi yang jelas. File bisa saling tertimpa, bug sulit dilacak, dan tim tidak tahu siapa mengubah apa. Saat terjadi error atau rilis, semuanya jadi lambat dan berisiko tinggi karena tidak ada acuan versi yang stabil. Akhirnya, pengembangan jadi tidak efisien dan rawan kesalahan.                         - Kelompok-1: Jika Tim menjaankan project tanpa menjalankan SCM, project akan beresiko mengalami perupahan yang tak terkendali. Perubahan tak terkendali ini nantinya akan menyebabkan ketidak konsistenan dalam sistem dan akhirnya akan mengalami system downtime.                                                                                                    - Kelompok11: Jika tim tidak mempunyai SCM (Software Configuration Management) sama sekali, maka akan muncul beberapa masalah. Pertama, tidak akan ada control versi sehingga kode bisa tertimpa ataupun hilang tanpa jejak sehingga tidak bisa diperbaiki secara mudah. Kedua, kolaborasi antar anggota akan lebih susah karena para anggota saling overwrite kodingan anggota lain. Ketiga, tidak ada Riwayat perubahan sehingga melacak penyebab masalahnya akan lebih susah.                - Kelompok-13: Bakal chaos parah. Tim bakal sering kejadian tindas menindas kode (saling overwriting), file hilang tanpa jejak, dan kita bakal kesulitan banget kalau mau kerja barengan di fitur yang sama dalam waktu bersamaan.              - Kelompok-4: Singkatnya, tanpa SCM, pengembangan software akan menjadi berantakan. Satu perubahan kecil bisa langsung merusak fitur lain yang tadinya sudah berjalan lancar. Tim developer juga akan kesulitan dan saling bertabrakan saat harus bekerja bareng mengedit kode yang sama. Akibatnya, kualitas aplikasi menjadi tidak terjamin, dan ketika terjadi kendala, tim tidak punya riwayat jejak untuk melacak masalahnya atau untuk memenuhi standar security.                         - Kelompok-10: Kalau tim development sama sekali nggak pakai SCM, project-nya dijamin bakal kacau balau. Masalah paling utama itu source code rawan tertimpa kerjaan orang lain karena nggak ada sistem yang ngatur bentrok antar file. Kita juga bakal terjebak bikin backup manual pakai nama folder aneh-aneh kayak project_v1, project_v2, sampai project_final_banget yang bikin pusing sendiri. Selain itu, kalau tiba-tiba ada update yang bikin sistem error, kita nggak punya history siapa yang ngubah dan apa yang diubah, otomatis kita nggak bisa di-rollback ke versi sebelumnya yang stabil. Ujung-ujungnya kolaborasi tim jadi super lambat, berantakan, dan risiko kodenya rusak total jadi sangat besar.                      - Kelompok-8: tim bisa mengalami konflik kode, kehilangan versi penting, sulit tracking perubahan, bug sulit ditelusuri, dan kolaborasi jadi berantakan. Risiko project gagal atau terlambat juga lebih besar.                                                                                                                                                          ----------------------                                                                                                                                                                                                                          Post by: weneville                                                                                                      Content: Kenapa baseline tidak boleh diubah secara langsung?                                                            Replies:                                                                                                                - Kelompok-5: Baseline tidak boleh diubah langsung karena jika diubah sembarangan, akan terjadi kekacauan koordinasi antar devloper, hilangnya history perubahan, dan rusaknya stabilitas sistem yang sudah dianggap stabil.                    - Kelompok-1: karena baseline punya fungsi sebagai “ground truth” resmi yang jadi titik referensi terpercaya bagi seluruh tim. perubahan langsung bakal merusak integritas audit, memutus rantai traceability, dan berpotensi merusak pekerjaan anggota tim lain yang bergantung pada baseline yang sama. Selain itu, reproducibility build juga tidak bisa dijamin jika baseline bebas diubah                                                                                                  - Kelompok-1: Baseline tidak boleh diubah secara langsung karena baseline merupakan versi item konfigurasi yang telah ditinjau dan disepakati secara resmi, yang berfungsi sebagai landasan atau titik awal (starting point) untuk tahapan pengembangan selanjutnya . Untuk menjaga integritas perangkat lunak, setiap perubahan pada baseline harus dilakukan melalui prosedur pengendalian perubahan (change control procedures) yang formal.                                                 - Kelompok-12: Di dunia SCM, baseline itu ibarat pondasi rumah atau titik checkpoint resmi yang udah disetujui bareng-bareng. Kalau aplikasinya udah mencapai tahap tertentu yang stabil dan fix, versi kodingan itu bakal dikunci dan dijadiin baseline. Nah, alasan paling utama kenapa kita nggak boleh ngotak-ngatik atau ngubah baseline ini secara langsung adalah demi menjaga kestabilan project. Kalau pondasinya diam-diam diubah tanpa sepengetahuan orang lain, semua fitur atau kodingan baru yang lagi dibangun di atas pondasi itu bisa ikut hancur atau berantakan karena pijakannya tiba-tiba beda.  Alasan kedua, ngubah baseline secara langsung bakal ngerusak fungsi "mesin waktu" atau sejarah kodingan kita. Baseline itu fungsinya sebagai patokan pasti buat ngebandingin versi yang lama sama versi yang baru. Kalau patokan awalnya aja diubah-ubah sesuka hati, kita bakal kehilangan jejak soal apa aja yang udah dikerjain, dan versi mana yang sebenernya udah disetujui aman. Ujung-ujungnya, kalau nanti ada error parah, kita nggak punya titik aman yang valid dan terpercaya buat ngelakuin undo.  Makanya, kalau emang harus ada perubahan di kode yang udah jadi baseline, aturannya nggak boleh asal timpa. Kita harus bikin "cabang" atau salinan baru dari baseline tersebut, ngelakuin perbaikan di salinan itu, dites lagi sampai bener-bener aman, baru deh minta persetujuan tim buat dijadiin baseline yang baru. Intinya, baseline itu kayak dokumen resmi yang udah dicap stempel; nggak boleh dicoret-coret pakai tipe-x sembarangan, tapi harus bikin dokumen revisi resmi kalau mau ada perubahan.                                                                                           - Kelompok-6: Baseline tidak boleh diubah langsung karena harus tetap stabil, dipercaya, dan bisa dilacak               - Kelompok15: Baseline tidak boleh diubah secara langsung karena baseline adalah versi resmi yang menjadi acuan dari suatu proyek. Perubahan langsung dapat menyebabkan hilangnya kontrol versi, konflik antar tim, sulit tracking perubahan, dan menurunkan kualitas software. Perubahan harus melalui procedure change management yang akan menghasilkan baseline baru.                                                                                                                       - Kelompok-13: Karena baseline itu jadi titik acuan resmi dalam proyek. Kalau diubah sembarangan, bisa kehilangan patokan awal, akhirnya susah ngecek apakah suatu perubahan itu memang peningkatan, malah bikin error, atau berdampak ke bagian lain.                                                                                                                  - Kelompok-14: Baseline dalam manajemen proyek atau pengembangan perangkat lunak tidak boleh diubah secara langsung karena ia berfungsi sebagai patokan tetap yang digunakan untuk mengukur kinerja, kemajuan, dan keberhasilan suatu proyek. Jika baseline terus-menerus diubah secara informal, tim akan kehilangan kemampuan untuk melakukan perbandingan antara rencana awal dengan realisasi langsung di lapangan, yang mengakibatkan hilangnya kendali terhadap ruang lingkup, jadwal, dan biaya.                                                                                                                 - Kelompok11: Baseline merupakan reference point yang dipercayai untuk membandingkan perubahan atau mendeteksi anomali. Jika baseline diubah, maka kegunaan baseline sebagai reference point tersebut tidak akan berjalan karena sudah tidak akurat.                                                                                                                    - Kelompok-10: Baseline itu ibarat pondasi utama atau titik acuan stabil yang udah disepakati bareng sama tim dalam sebuah project software. Kenapa nggak boleh diubah secara langsung sesuka hati? Karena kalau setiap developer bisa bebas ngedit file intinya tanpa prosedur, project-nya pasti bakal kacau balau dan rawan error parah. Bayangin kalau kamu lagi ngoding fitur baru pakai patokan versi A, tapi tiba-tiba teman ngubah baseline-nya secara sepihak jadi versi B, otomatis kerjaan bakal bentrok dan susah di-merge. Selain itu, ngubah langsung tanpa lewat sistem kontrol (kayak pull request atau formal review) bikin kita kehilangan jejak history commit secara detail. Jadi kalau misal update terbarunya malah ngerusak sistem di production, kita bakal pusing nyari tahu siapa yang salah dan susah banget buat rollback ke versi lama yang masih jalan normal. Makanya, perubahan apa pun ke baseline harus lewat proses persetujuan dulu biar kode tetap konsisten dan aman buat semua orang di tim                                                                                      - Kelompok-4: Baseline tidak boleh diubah secara langsung karena baseline merupakan versi resmi yang sudah disetujui untuk menjadi acuan atau patokan utama bagi seluruh tim. Jika diubah sembarangan tanpa melalui prosedur yang jelas, tim akan kehilangan titik referensi yang konsisten, sehingga perubahan-perubahan selanjutnya menjadi berantakan dan sulit untuk dilacak, dibandingkan, maupun dikontrol.                                                                               - Kelompok-7: Karena baseline berfungsi sebagai titik acuan yang sudah disepakati, sehingga jika diubah sembarangan maka acuan tersebut menjadi tidak lagi relevan. Akibatnya tim akan kesulitan dan berisiko menimbulkan inkonsistensi dalam proses pengembangannya. Jika adanya perubahan sebaiknya dilakukan saat proses pembuatan atau proses evaluasi baseline.    - Kelompok-8: Karena baseline adalah titik acuan resmi dalam project. Jika diubah langsung tanpa kontrol, bisa menyebabkan inkonsistensi, konflik, dan sulit melacak perubahan. Perubahan pada baseline harus lewat change control process.                                                                                                                             ----------------------                                                                                                                                                                                                                          Post by: adminkel2                                                                                                      Content: Hi All, reply buat jawab ya. Kalau pakai akun selain yang udah kita buatin, tolong cantumin nomer kelompoknya. Thank you dan good luck                                                                                                 Replies:                                                                                                                - Kelompok-5: oke                                                                                                       - Kelompok-12: sipp                                                                                                     - Kelompok-1: ok                                                                                                        - Kelompok-14: ok                                                                                                       - Kelompok-7: Siap                                                                                                      - Kelompok-13: Ok                                                                                                       - Kelompok11: Yessirrrr                                                                                                 - Kelompok-3: kelompok 3 hadir                                                                                                                                                                                                                  ----------------------                                                                                                                                                                                                                          Post by: weneville                                                                                                      Content: Apa perbedaan dari version control, issue tracking, dan build tool dalam konteks scm?                          Replies:                                                                                                                - Kelompok-14: Version Control Mengelola perubahan kode dari waktu ke waktu (siapa ubah apa, kapan, bisa rollback). Contoh: Git Issue Tracking Mencatat dan mengelola tugas/bug/fitur yang harus dikerjakan dalam proyek. Contoh: Jira Build Tool Mengotomatisasi proses build (compile, test, packaging aplikasi). Contoh: Maven                                       - Kelompok-1: Version Control berfokus pada mengelola berbagai versi dan varian dari item konfigurasi, seperti kode program dan dokumen . Fungsi utamanya adalah melacak riwayat perubahan kode dari waktu ke waktu untuk menjaga integritas perangkat lunak . Issue Tracking berfungsi untuk melacak dan mengelola masalah, bug, serta permintaan penambahan fitur (enhancement requests) yang dilaporkan . Alat seperti Jira atau Bugzilla memberikan pelacakan secara terpusat, notifikasi penugasan, hingga data analitik terkait isu proyek . Build Tools bertujuan untuk mengotomatisasi proses kompilasi source code menjadi program yang siap dijalankan (dieksekusi) . Penggunaan alat seperti Gradle, Maven, atau Make memastikan konsistensi perangkat lunak di berbagai lingkungan, mengurangi risiko kesalahan manusia (human error), dan sangat penting dalam mendukung integrasi berkelanjutan (Continuous Integration) .                                                        - Kelompok-6: Version control menyimpan perubahan kode, Issue tracking mencatat tiap task yang harus dikerjakan, Build tool adalah tool untuk merakit software                                                                                  - Kelompok-12: Perbedaan ketiganya itu gampang banget dibedain dari fungsinya pas kita lagi ngerjain project. Pertama, Version Control itu fokusnya murni ngurusin file kodingan. Dia ibarat mesin waktu yang nyatet semua perubahan kode dan ngasih fitur undo kalau tiba-tiba aplikasinya error. Jadi urusannya bener-bener cuma seputar histori dan keamanan kode yang lagi diketik.  Kedua, Issue Tracking. Kalau yang ini nggak nyentuh kodingan sama sekali. Fungsinya lebih kayak papan to-do list buat ngatur tugas, jadwal, dan nyatet laporan bug yang harus dibenerin. Alat ini dipakai buat nentuin siapa ngerjain fitur apa biar anggota kelompok nggak kebingungan dan nggak ngerjain bagian yang tumpang tindih. Fokusnya murni buat ngurusin tugas dan manajemen kerjaan.  Ketiga, Build Tool. Kodingan mentah yang udah selesai diketik itu kan sebenernya nggak bisa langsung di-klik dan jalan gitu aja. Kodenya harus di-"masak", digabungin, dan diproses dulu biar jadi satu aplikasi utuh yang siap dipakai. Nah, Build Tool inilah yang otomatis ngerjain proses itu, jadi tugas utamanya adalah ngubah barisan kode mentah jadi aplikasi yang beneran jadi.  Singkatnya, alur kerjanya itu saling nyambung. Kita bagi-bagi tugas lewat Issue Tracking, lalu mulai ngetik kode dan nyimpen perubahannya dengan aman pakai Version Control, dan terakhir kodenya diolah jadi aplikasi siap pakai menggunakan Build Tool.                                                 - Kelompok-5: Version Control (contohnya Git) dipakai buat ngatur source code, nyatet setiap perubahan, ngelola branch, merge code, dan memungkinkan rollback kalau ada error. Fungsinya buat menjaga codebase tetap rapi dan stabil. Issue Tracking (seperti Jira atau GitHub Issues) fokus ke pencatatan task, bug, atau request fitur dalam bentuk ticket. Sistem ini membantu tim tahu apa yang harus dikerjakan dan alasan perubahan kode dilakukan. Build Tool (misalnya Apache Maven atau Webpack) bertugas meng-compile code, mengatur dependency, menjalankan testing, lalu mengubah source code jadi software yang siap dijalankan.                                                                                                   - Kelompok11: Dalam konteks SCM, version control, issue tracking, dan build tool punya peran yang berbeda tapi saling melengkapi. Version control digunakan untuk mengelola perubahan pada source code, seperti menyimpan history, melakukan branching, dan menggabungkan code dari beberapa developer. Issue tracking berfungsi untuk mengatur pekerjaan tim, seperti mencatat bug, fitur yang harus dibuat, dan memantau progress pengerjaan. Sementara itu, build tool digunakan untuk mengubah code menjadi aplikasi yang bisa dijalankan, termasuk proses compile, mengatur dependency, dan menjalankan testing. Jadi, secara sederhana, version control fokus ke code, issue tracking ke manajemen tugas, dan build tool ke proses pembuatan aplikasinya.                                                                                                         - Kelompok-10: Version Control itu fokusnya murni ke pelacakan source code, contohnya kayak Git. Tool ini nyimpen semua history perubahan file (commit), jadi kalau kode yang baru di-upload ternyata malah bikin sistem error, kita bisa langsung rollback ke versi lama yang masih aman. Nah, kalau Issue Tracking itu bukan buat nyimpen kode, tapi buat manajemen tugas dan nge-track bug, contohnya Jira atau Trello. Di sini kita bisa nyatat fitur apa yang mau dibikin, error apa yang harus di-patch, dan siapa dari anggota tim yang lagi ditugasin ngerjain bagian tersebut. Terakhir, Build Tool itu fungsinya murni buat otomatisasi. Daripada kita ribet compile kode, masukin dependencies, dan jalanin testing secara manual satu-satu lewat terminal, tool kayak Maven atau Make bakal otomatis ngerakit source code mentah kita jadi aplikasi atau file eksekusi yang siap dipakai                                                                                            - Kelompok15: Version Control System berfungsi untuk mengelola perubahan source code dari waktu ke waktu. VCS mencatat revisi, memungkinkan kolaborasi antar pengembang, dan menyediakan fitur rollback. Berbeda dari VCS, Issue Tracking berfungsi untuk mengelola daftar tugas, bug, dan permintaan fitur baru. Ini adalah sistem manajemen proyek yang memastikan setiap masalah terdokumentasi dan memiliki penanggung jawab. Terakhir Build Tool berfungsi untuk Mengotomatiskan proses pengubahan source code menjadi artefak yang executable. Bertugas untuk mengcompile code, test running automation, dan mengcompile code menjadi format seperti .jar atau .exe.                                                                      - Kelompok-4: Version Control Berfungsi melacak riwayat perubahan software dari waktu ke waktu untuk memudahkan debugging dan memungkinkan rollback ke versi sebelumnya. Issue Tracking Berfungsi mengelola dan melacak semua laporan masalah, bug, serta permintaan fitur baru dalam satu sistem terpusat. Build Tools Berfungsi mengotomatisasi proses kompilasi source code menjadi program yang dapat dijalankan secara konsisten, cepat, dan bebas dari human error.                       - Kelompok-13: Kalau Version Control itu tempat buat letakin kode (misalnya Github), Issue Tracking itu daftar "to do list" atau bug yang harus diberesin(kayak jira/trello), sedangkan Build Tool itu yang tugasnya ngerakit kode kita jadi aplikasi yang siap jalan (kayak maven atau npm).                                                                           - Kelompok-7: Version control: menunjukkan perubahan yang dialami dalam sistem yang memudahkan debugging, rollback, dll. Issue tracking: melacak semua masalah dan mencatatnya dalam satu sistem yang bisa dilihat tim. build tool: automatisasi proses komplikasi source code jadi satu program yang dapat dieksekusi yang membuat proses build menjadi konsisten, cepat, dan bebas dari human error                                                                                           - Kelompok-8: Version Control digunakan untuk mengelola perubahan source code, contohnya Git. Issue Tracking digunakan untuk mencatat dan memantau bug, task, atau feature request, contohnya Jira. Build Tool digunakan untuk otomatisasi compile, testing, dan packaging software, contohnya Maven atau Gradle. Ketiganya mendukung SCM dari sisi kontrol code, manajemen pekerjaan, dan proses build.                                                                                                                                                                                                                ----------------------                                                                                                                                                                                                                          Post by: weneville                                                                                                      Content: Apa tujuan utama dari Software Configuration Management dalam pengembangan software?                           Replies:                                                                                                                - Kelompok-5: menjamin integritas software sepanjang hidup pengembangannya. SCM bertindak sebagai sistem kontrol yang mengelola perubahan, melacak versi, dan memastikan pengerjaan ada di code yang Benar.                                     - Kelompok-12: Tujuan utama dari Software Configuration Management (SCM) itu sebenernya buat ngontrol semua perubahan yang terjadi selama kita bikin software, biar project-nya nggak berantakan atau chaos. Kan kalau lagi ngoding apalagi bareng-bareng, pasti banyak banget tuh file yang diubah, ditambah, atau malah ga sengaja kehapus.  Nah, SCM ini ibaratnya kayak buku catetan atau mesin waktu buat kodingan kita. Dia bakal nyatet siapa aja yang ngubah kode, bagian mana yang diubah, dan kapan diubahnya. Jadi kalau tiba-tiba ada bug atau error parah, kita nggak perlu panik karena bisa gampang di-undo atau balik ke versi kodingan sebelumnya yang masih aman.  Selain itu, SCM juga ngebantu banget biar kerjaan kita nggak saling timpa satu sama lain pas lagi ngerjain project bareng tim. Intinya, SCM mastiin proses development tetep rapi, aman, dan ke-track dengan jelas dari awal sampai aplikasinya beneran jadi.                                              - Kelompok-7: - Mengontrol perubahan dalam software                                                                     - Kelompok-6: Mengelola dan mengontrol perubahan pada software agar tetap teratur dan bisa diandalkan                   - Kelompok-10: Tujuan utama dari Software Configuration Management (SCM) dalam Software Engineering itu simpelnya buat ngelacak dan ngendaliin setiap perubahan kode atau aset selama project berjalan.  Bayangin kalau di tim developer ada banyak orang yang ngoding di file yang sama secara barengan, pasti bakal bentrok dan error semua kalau nggak ada sistem yang ngatur. Nah, SCM ini berfungsi mastiin semua perubahan itu tercatat rapi di sebuah history, jadi kita tahu pasti siapa yang ngubah, apa yang diubah, dan kapan diubah. Konsepnya sama kayak pas kita pakai Git, kalau misal ada update terbaru yang rilis tapi malah ngerusak sistem di production, kita bisa dengan gampang rollback ke versi commit lama yang masih stabil. Intinya, SCM dipakai buat menjaga konsistensi software dan bikin kolaborasi tim tetap aman tanpa takut source code aslinya berantakan atau tertimpa kerjaan orang lain                                                                  - Kelompok-13: Kelompok 13 • Mengontrol perubahan dalam software • Mendukung kolaborasi tim • Menjaga kualitas software • Menyediakan traceability perubahan                                                                                    - Kelompok-7: Mendukung kolaborasi tim, menjaga kualitas software, menyediakan traceability perubahan                   - Kelompok-14: Dalam pengembangan perangkat lunak, SCM berperan untuk mengontrol setiap perubahan yang terjadi pada software agar tetap terstruktur dan terdokumentasi dengan baik. Selain itu, SCM juga mendukung kolaborasi tim dengan memungkinkan banyak developer bekerja secara bersamaan tanpa konflik yang tidak terkelola. Dengan proses yang teratur, kualitas software dapat lebih terjaga karena setiap perubahan dapat diuji dan divalidasi. Tidak kalah penting, SCM menyediakan traceability, yaitu kemampuan untuk melacak riwayat perubahan secara jelas sehingga memudahkan identifikasi masalah maupun audit di kemudian hari.                                                                                               - Kelompok15: SCM bertujuan untuk meminimalkan risiko kesalahan, meningkatkan produktivitas tim, dan memastikan kualitas perangkat lunak tetap terjaga meskipun terjadi banyak perubahan selama proses developnya. Contohnya kaya versioning,DLL- Kelompok11: Tujuan utama dari Software Configuration Management (SCM) adalah untuk mengatur dan mengontrol semua perubahan yang terjadi dalam pengembangan software supaya tetap rapi, konsisten, dan bisa dilacak. Dengan SCM, setiap perubahan pada code akan tercatat dengan jelas siapa yang mengubah, kapan diubah, dan apa yang diubah, sehingga memudahkan kolaborasi dalam tim dan mengurangi risiko error atau konflik. Selain itu, SCM juga membantu memastikan bahwa setiap versi software bisa dikelola dengan baik, termasuk jika suatu saat perlu kembali ke versi sebelumnya yang lebih stabil.        - Kelompok-4: Software Configuration Management (SCM) bertujuan utama untuk mengendalikan dan melacak semua perubahan pada perangkat lunak guna memastikan integritas sistem sepanjang siklus pengembangannya. Praktik ini sangat esensial karena dapat mencegah munculnya error dari perubahan yang tidak terkelola, sekaligus memfasilitasi kelancaran kolaborasi bagi tim developer yang bekerja bersamaan. Selain itu, SCM berfungsi untuk menjaga kualitas perangkat lunak secara konsisten dan mendokumentasikan jejak audit (audit trail) untuk keperluan pelacakan serta kepatuhan terhadap regulasi industri.  - Kelompok-8: mengelola perubahan pada software secara terkontrol agar development lebih terorganisir, konsisten, dan minim error. SCM membantu tracking perubahan kode, menjaga integritas project.                                                                                                                                                                    ----------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
